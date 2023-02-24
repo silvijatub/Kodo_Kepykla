@@ -1,3 +1,5 @@
 # Kodo_Kepykla
 
-Programavimo inžinerija
+Programavimo inžinerijos projektas
+
+Komandos nariai: Silvija Tūbaitė, Neda Narmontaitė, Guoda Stulpinaitė, Jonas Gendvilas
