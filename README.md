@@ -1,3 +1,3 @@
 # Kodo_Kepykla
 
-# Programavimo inžinerija
+Programavimo inžinerija
