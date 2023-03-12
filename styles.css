@@ -39,7 +39,7 @@ body {
     color: #442419;
     padding: 18px 30px 12px 30px;
     cursor: pointer;
-    text-transform: capitalize;
+    text-transform: uppercase;
  }
 
 .primaryButton > div, .secondaryButton > div {
@@ -68,7 +68,7 @@ body {
     color: #f9efe4;
     padding: 12px 24px;
     cursor: pointer;
-    text-transform: capitalize;
+    text-transform: uppercase;
  }
 
 .ziuretiButton {
