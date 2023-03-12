@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+}
+
+body {
+    background-color: #f9efe4;
+    font-family: 'Inter';
+}
+
+.rinktisMus {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    padding: 64px 20px;
+    background-color: #442419;
+}
+
+.rinktisMus > div {
+    width: 400px;
+    color: #f9efe4;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    height: fit-content;
+}
+
+.rinktisMus > div > p {
+    margin: 16px 0px 0px 0px;
+}
+
+.primaryButton {
+    background-color: #FDC284;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #442419;
+    padding: 18px 30px 12px 30px;
+    cursor: pointer;
+    text-transform: capitalize;
+ }
+
+.primaryButton > div, .secondaryButton > div {
+    display: flex;
+    gap: 16px;
+}
+
+.meniuItemGrid{
+    display: grid;
+    height: 516px;
+}
+
+.meniuItem, .ziuretiButton {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.secondaryButton {
+    height: 48px;
+    background-color: #442419;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #f9efe4;
+    padding: 12px 24px;
+    cursor: pointer;
+    text-transform: capitalize;
+ }
+
+.ziuretiButton {
+    margin: 312px auto auto auto;
+    width: 196px;
+}
+
+ .meniuIntro {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .meniuIntro > div {
+    padding: 64px 64px 54px 109px;
+ }
+
+ h1 {
+    font-size: 40px;
+    color: #f79221;
+    margin-bottom: 48px;
+}
+
+.meniu {
+    padding: 88px 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px 24px;
+    justify-content: center;
+}
+
+.meniuItem {
+    width: 377px;
+    height: 516px;
+    background-color: #bbbb5a;
+    position: relative;
+}
+
+.meniuItem > div {
+    margin: 24px;
+}
+
+.meniuItem > img {
+    height: 377px;
+    width: 377px;
+}
+
+.pavadinimas {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    color: #442419;
+}
+
+.kaina {
+    margin: 4px 0px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.aprasymas {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
