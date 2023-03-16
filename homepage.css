@@ -85,12 +85,29 @@ body {
 }
 
 .mylimiausiuNuotraukos {
-    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    gap: 0px 48px;
+    padding: 40px 48px 68px 48px;
 }
 
 .mylimiausiuNuotraukos > button {
+    height: 172px;
+    width: 172px;
     border-radius: 50%;
+    padding: 0px;
     cursor: pointer;
+    border: none;
+}
+
+.mylimiausiuNuotraukos > button > img{
+    height: 172px;
+    width: 172px;
+    border-radius: 50%;
+}
+
+.mylimiausiuNuotraukos > button > img:hover{
+    transform: scale(1.15);
 }
 
 .laukiameJusu {
