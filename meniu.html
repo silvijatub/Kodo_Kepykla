@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="lt">
    <head>
-      <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
    </head>
-   <body>
-         <div class="meniuIntro">
+   <body ng-app="app" ng-controller="controller">
+        <div class="header">
+            <button class="headerBasket headerButton"><img src="https://lh3.googleusercontent.com/L8UqbsKKayiXLOdtIE5GUbcrJap7XeJCZ93LR0PUh6rg6e4fzSYfWbVopYe387jvmu167a0O7QoOR1-etIkmZVmRScCfdK7KHGPija06GSts-9g42T8idDaMryDMwYkQije7E3sRFa_rc4IvGD796l-Eaj2SVESfKEaWWjvs3s4CpFwJDx5WHAUWyQHNk0tgtuUs4emAQMvIa5JFAK53YgB0nVfi4FmIJP6ulzu3eSSarVYbBUdwJTZJZyhDNqVwSW2qBHQFmbziq_OdFNnKZzx96Rtc-6nL4L2ukkt1SidpED4YeMmZn-lst4u4qLSNmLVnxv9qO-1C0YLEXHazkETigojx-YoZWZ8r5Kt_c6usgjJ9hZ4iZ2V8-34BecFqr-XKqVsE4k4tKrnAuwGJC9un9a-KgZTR7FlUwYVdIEDMk48lro4NAKIdBveQUkNRTeJVG2M1y_VAgatyVBj__ltXv5u4YPpVsEFcgQOQHZG0LDZ_WA3sgDJbmtsFFW2ujxdsTReMpPi2B0U5_6Voh5NpHYfAX-V0gvNjKhXfZziue-UbP2ExdutjxejTT8QXeWGj0HTHjOyNKGWYmiMBkmfEUlYEyJSbCXFZlB-LMp7_tIGv7DAWeAjCrYNFD6RE6utBUDbQ5dBN9JcpdRxK_mJ83sM9Lo1BCi-AFj5mxusTuXAUvXPDsxtfbEpiGZaKIvOVdY1msXHB0PAH2lukGlkyr3cH7tB22KC5H3f5ZsRro1nd2KbqynDOEGVbcy3x98yQEPHwegBT3oDOXm6inekIf0HXFCHw9Gh0_-7VRdO74wNWfjiMGooX9GPvpYUCS6WmsQfEyQq27P82cUbJqPnkF63hx-GfOlnw_ugpEo59ckficutx7WIXQEqrsaCXnVVi29RLkEyK0sii2ZwFPM68Bi1lrmlijEomqAoPL9NxP0jT=w40-h36-no?authuser=0" alt="Krepšelis"></button>
+            <button class="headerButton">KONTAKTAI</button>
+            <button class="headerButton">PRIVATUMO POLITIKA</button>
+            <button class="headerButton">KARJERA</button>
+            <button onclick="location.href=''" onclick="location.href='meniu.html'" class="headerButton"><strong>MENIU</strong></button>
+            <button class="headerButton">APIE MUS</button>
+            <button onclick="location.href='homepage.html'" class="logoButton"><img class="logo" src="https://lh3.googleusercontent.com/8sperpVU0RndjYvu9XUULVmaswL-Gkw0RN_BADTMxpOayFjsFgVj0B2kQnbvXaAFZDw=w2400" alt="Logo"></button>
+        </div>
+
+        <div class="meniuIntro">
             <div>
                 <h1>IŠSIRINKITE TOBULUS KEPINIUS IŠ PLATAUS MŪSŲ ASORTIMENTO!</h1>
-                <button class="primaryButton">
+                <button onclick="myscroll(meniu.id)" class="primaryButton">
                     <div>
                         <img src="https://lh5.googleusercontent.com/xW5RJRoYOWHJe2qRS6bsFmBf4EULPC0nV2XGUGe6bLIeDU8gX6-FnAtz3JNtZ6xq1j4=w2400" alt="Žiūrėti meniu">
                         <p>Žiūrėti</p>
@@ -18,9 +29,9 @@
                 </button>
             </div>
             <img class="meniuImage" src="https://lh3.googleusercontent.com/aNz8HNeJFrQSk3Kmv9xer55HWzQ01eMcreFOIJBeIkq9Hdkw4AoIaYwmPe6siiY9Ui4=w2400" alt="Kruasanai">
-         </div>
+        </div>
 
-         <div class="rinktisMus">
+        <div class="rinktisMus">
             <div class="rinktisMusElementas">
                 <img src="https://lh4.googleusercontent.com/uVR2yzCOLi3tnM0H_TyqfA-mQvsMY3lHMNfE4OgTsyb4v90pYtenFCKaeBOU4jkLqiI=w2400" alt="Ekologiški ingredientai">
                 <p >Ekologiški, aukščiausios kokybės ingredientai</p>
@@ -30,164 +41,67 @@
                 <p>Kepame kasdien, todėl visada šviežia</p>
              </div>
              <div class="rinktisMusElementas">
-                <img src="https://lh3.googleusercontent.com/Vo-ELs1jEqRgL0LK4AMiq0-o0IJ1c7svgJ2C9vj8OzDmAJRR6Fig5VFVi0ruroCtFso=w2400" alt="Autėntiška">
+                <img src="https://lh3.googleusercontent.com/Vo-ELs1jEqRgL0LK4AMiq0-o0IJ1c7svgJ2C9vj8OzDmAJRR6Fig5VFVi0ruroCtFso=w2400" alt="Autentiška">
                 <p>Gaminiai, iškepti laikantis Prancūziškų tradicijų</p>
              </div>
-         </div>
+        </div>
 
-         <div class="meniu">
-            <div class="meniuItemGrid">
-                <button class="secondaryButton ziuretiButton" style="z-index: 2;">
+        <div class="meniu" id="meniu">
+            <div class="meniuItemGrid" ng-repeat="x in records">
+                <button class="secondaryButton ziuretiButton">
                     <div>
                         <img src="https://lh4.googleusercontent.com/2l13WuPo34t9inUjJk9ofzE0DBNpDNg8c83JtlzHEFyyA0yJ8LLV4dpt0N87OoFAPtA=w2400" alt="Į krepšelį">
                         <p>Į krepšelį</p>
                     </div>
                 </button>
-                <div class="meniuItem" style="z-index: 1;">
-                    <img src="https://lh3.googleusercontent.com/4-if2dwav6dandec3J8y3SNpCGsSg78sZqR-udURvoKTL1aYO_F4kfX1T1c_4kIDGn8=w2400" alt="Kouign Amann">
+                <div class="meniuItem">
+                    <img src={{x.image}} alt={{x.name}}>
                     <div> 
-                        <p class="pavadinimas">Kouign Amann</p>
-                        <p class="kaina">2.99 € / vnt.</p>
-                        <p class="aprasymas">Šis tradicinis prancūziškas kepinys pagamintas iš trapios, sviestinės tešlos, </p>
+                        <p class="pavadinimas">{{x.name}}</p>
+                        <p class="kaina">{{x.price}}</p>
+                        <p class="aprasymas">{{x.description}}</p>
                     </div>
                  </div>
             </div>
+        </div>
 
-            <div class="meniuItemGrid">
-                <button class="secondaryButton ziuretiButton" style="z-index: 2;">
-                    <div>
-                        <img src="https://lh4.googleusercontent.com/2l13WuPo34t9inUjJk9ofzE0DBNpDNg8c83JtlzHEFyyA0yJ8LLV4dpt0N87OoFAPtA=w2400" alt="Į krepšelį">
-                        <p>Į krepšelį</p>
-                    </div>
-                </button>
-                <div class="meniuItem">
-                    <img src="https://lh5.googleusercontent.com/kX9JmxywKqfUErwZ10rjvy3T37eIXQSlwhFDEPwsO-KwPW3TMK_8fapl8yWYCz6PgaA=w2400" alt="Profiterole">
-                    <div>
-                        <p class="pavadinimas">Profiterole</p>
-                        <p class="kaina">1.99 € / vnt.</p>
-                        <p class="aprasymas"> Šis populiarus prancūziškas desertas pagamintas iš lengvos ir korėtos tešlos</p>
-                    </div>
+        <div class="laukiameJusu">
+            <h1>LAUKIAME JŪSŲ</h1>
+            <div class="kepyklosInfo">
+                <div class="adresasIrLaikas">
+                    <p>Kodo Kepykla</p>
+                    <p>Studentų g. 50,</p>
+                    <p>Kaunas</p>
+                    <p>Darbo laikas:</p>
+                    <p>I-V | 09:00 - 18:00</p>
+                    <p>VI-VII | 10:00 - 16:00</p>
                 </div>
-            </div>
-
-            <div class="meniuItemGrid">
-                <button class="secondaryButton ziuretiButton" style="z-index: 2;">
-                    <div>
-                        <img src="https://lh4.googleusercontent.com/2l13WuPo34t9inUjJk9ofzE0DBNpDNg8c83JtlzHEFyyA0yJ8LLV4dpt0N87OoFAPtA=w2400" alt="Į krepšelį">
-                        <p>Į krepšelį</p>
-                    </div>
-                </button>
-                <div class="meniuItem">
-                    <img src="https://lh6.googleusercontent.com/vye5XF4AFPWqthCaBpyvr9lKhUoqbE2QZW_RXuwrd_ftcuP0NirMWQoA0irkm_1-Y6k=w2400" alt="Macarons">
-                    <div>
-                        <p class="pavadinimas">Macarons</p>
-                        <p class="kaina">1.59 € / vnt.</p>
-                        <p class="aprasymas">Nors pavadinimas ir primena makaronus, tarp šių sausainių ir makaronų</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="meniuItemGrid">
-                <button class="secondaryButton ziuretiButton" style="z-index: 2;">
-                    <div>
-                        <img src="https://lh4.googleusercontent.com/2l13WuPo34t9inUjJk9ofzE0DBNpDNg8c83JtlzHEFyyA0yJ8LLV4dpt0N87OoFAPtA=w2400" alt="Į krepšelį">
-                        <p>Į krepšelį</p>
-                    </div>
-                </button>
-                <div class="meniuItem">
-                    <img src="https://lh6.googleusercontent.com/RB1hPtx5ReCM8ikZpFVtRy9p7-XImY4La7_OsKsBfhkRhTqmiv343UQkHlUVsFZOaSU=w2400" alt="Chouquettes">
-                    <div>
-                        <p class="pavadinimas">Chouquettes</p>
-                        <p class="kaina">8.99 € / kg</p>
-                        <p class="aprasymas">Didelio populiarumo sulaukęs Prancūzijos kepinys. Šie maži, plikytos tešlos sausainiai kepami iš traškios</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="meniuItemGrid">
-                <button class="secondaryButton ziuretiButton" style="z-index: 2;">
-                    <div>
-                        <img src="https://lh4.googleusercontent.com/2l13WuPo34t9inUjJk9ofzE0DBNpDNg8c83JtlzHEFyyA0yJ8LLV4dpt0N87OoFAPtA=w2400" alt="Į krepšelį">
-                        <p>Į krepšelį</p>
-                    </div>
-                </button>
-                <div class="meniuItem">
-                    <img src="https://lh5.googleusercontent.com/WhWxT-AVjZfqSfsnNN7u0fhD0WKwhbth5HThsfPOHGYzsiJ3Hq0eRBuiut4nq7DV7zo=w2400" alt="Madeline">
-                    <div>
-                        <p class="pavadinimas">Madeline</p>
-                        <p class="kaina">0.99 € / vnt.</p>
-                        <p class="aprasymas">Šie malonūs kepinukai yra pagaminti iš subtilios, lengvos tešlos, kuriai būdingas puikus švelnumas ir lengvumas</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="meniuItemGrid">
-                <button class="secondaryButton ziuretiButton" style="z-index: 2;">
-                    <div>
-                        <img src="https://lh4.googleusercontent.com/2l13WuPo34t9inUjJk9ofzE0DBNpDNg8c83JtlzHEFyyA0yJ8LLV4dpt0N87OoFAPtA=w2400" alt="Į krepšelį">
-                        <p>Į krepšelį</p>
-                    </div>
-                </button>
-                <div class="meniuItem">
-                    <img src="https://lh5.googleusercontent.com/4HDhmwsH2rRhsXAT4So0KTyjtueQ6zHVadaxH5ntEL5u7XwBDvDQr1cfq4B9KxTOsEo=w2400" alt="Religiouse">
-                    <div>
-                        <p class="pavadinimas">Religieuse</p>
-                        <p class="kaina">2.99 € / vnt.</p>
-                        <p class="aprasymas">is puikus desertas gaminamas iš švelnios, kreminės tešlos, apipiltos švelniu kremu!</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="meniuItemGrid">
-                <button class="secondaryButton ziuretiButton" style="z-index: 2;">
-                    <div>
-                        <img src="https://lh4.googleusercontent.com/2l13WuPo34t9inUjJk9ofzE0DBNpDNg8c83JtlzHEFyyA0yJ8LLV4dpt0N87OoFAPtA=w2400" alt="Į krepšelį">
-                        <p>Į krepšelį</p>
-                    </div>
-                </button>
-                <div class="meniuItem">
-                    <img src="https://lh3.googleusercontent.com/Mp0Te2xwOF5_howmFs2uuJwyo7YgWMw8cArwH8ckWsJ1ZRbc1UkuP9PIxsosP08S0Jg=w2400" alt="Pain au Chocolate">
-                    <div>
-                        <p class="pavadinimas">Pain au chocolate</p>
-                        <p class="kaina">1.39 € / vnt.</p>
-                        <p class="aprasymas">Tai tobulas desertas bet kuriam paros metui. Šios bandelės</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="meniuItemGrid">
-                <button class="secondaryButton ziuretiButton" style="z-index: 2;">
-                    <div>
-                        <img src="https://lh4.googleusercontent.com/2l13WuPo34t9inUjJk9ofzE0DBNpDNg8c83JtlzHEFyyA0yJ8LLV4dpt0N87OoFAPtA=w2400" alt="Į krepšelį">
-                        <p>Į krepšelį</p>
-                    </div>
-                </button>
-                <div class="meniuItem">
-                    <img src="https://lh4.googleusercontent.com/R6UwDJ2oqTqtFeVvVaOwCyYRxcslk3pYpTtWwz8952QNEDrX-zipbK9tdCdB5f4mTyM=w2400" alt="Canneles">
-                    <div>
-                        <p class="pavadinimas">Canneles</p>
-                        <p class="kaina">0.99 € / vnt.</p>
-                        <p class="aprasymas">Vienas iš klasikinių Prancūzijos desertų, turinčių savyje kažką labai jaukaus</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="meniuItemGrid">
-                <button class="secondaryButton ziuretiButton" style="z-index: 2;">
-                    <div>
-                        <img src="https://lh4.googleusercontent.com/2l13WuPo34t9inUjJk9ofzE0DBNpDNg8c83JtlzHEFyyA0yJ8LLV4dpt0N87OoFAPtA=w2400" alt="Į krepšelį">
-                        <p>Į krepšelį</p>
-                    </div>
-                </button>
-                <div class="meniuItem">
-                    <img src="https://lh5.googleusercontent.com/xl6jZP91GISAwSsHpxPzvAfVFkpekqq6YPTx3u-WPVNoaRre8Q5iVvGGduR1cbzxBgo=w2400" alt="Croissant">
-                    <div>
-                        <p class="pavadinimas">Croissant</p>
-                        <p class="kaina">1.29 € / vnt.</p>
-                        <p class="aprasymas">Vienas žinomiausių kepinių visame pasaulyje. Kruasanus galima laikyti ne tik Prancūzijos simboliu</p>
-                    </div>
+                <div class="zemelapis">
+                    <img src="https://lh3.googleusercontent.com/w7rZALBmnXecPbEx7JVWT33gck1QuxluC4XdV9kl57XGHkicbUThwGQ5nA1O8bI3cQ7UN8A91kUxgRbQjzs4W9Zc1yvRDu1Lz1RdrJ-d2lxsNSVGrmUyM2Qtm8wyeTZld_TMszZW0GgReguELIeDsCH-n7oTEGbtOqca0W5CoOdTajcGLk69tvLmvdPX45xkZqc0sa7OYRimqUhNzk72cv6RZrKGpTQRpWyhPGTa3sVLjPzOeFcmo3A3gNIUrbxxIJ7PjlEDYD0mAXEbaSkEgRQDuQaLSJj9Fb_m4JRNQjwy_x6bzAL3QHjeKWSlO8Oq_L-El3BC7j9qk8oADg7fLOsjxkddjo7vvceQ73sRIXXnaJRr_zAq4QlmBw8Vpo4_L1oblhRpvWawaYP-3R8JsXimPZQ69HQg-Hm-nhj8j4B02AO2gugGZqNZoq5wlHTIUlj9tuGgTFchTqWIrktZMGvM9pn3IDFZtPNZSj7AnwbuZ8l5q_jm5tbA85LTxFcJeYmcm_kQbHuagQmJYhHZs2hNbWaVROelDaAVHrtG9J5mm1Cg4qZkdnz-FUmN94EnBAKbkORquSjIFQEcw0JLEbLBJSIhAGBnsEWBTVB5zeZgLqxixZZwCuymVc5F8ivyYVkyDEucvY05b2HpKYOxF7SY3C0jHYMfFB-xfSjoP-21fOMl-cp0PnByswi5XVYfdzqIm-xd4Hxx3lGJg3QRckASGdd6VXIKt4IgTY-Icw5icKlA5_ONqjjAkvbGl9FdgPY4y_lz-C7pP-_poLork_ZDrdbNR3NpBNjTnrrzeLXK-VzMQT_RGN9rtbRBgUA-HxJ7X9jhsB_Tin_b0GoUqrdMIO2sJ8F_OAEE61XmpG2fnVm07rKFgp62HEanMg82C0t3VcNFtg2pZFSMO9SDv1GAsI5klz7dhtoIhmAByukEFkaY=w647-h439-no?authuser=0" alt="Žemėlapis">
                 </div>
             </div>
         </div>
+
+        <div class="kontaktai">
+            <div class="pirmiKontaktai">
+                <p>Susisiekite su mumis:</p>
+                <p>kodokepykla@gmail.com</p>
+                <p>+37065658564</p>
+                <div>
+                    <button>fb</button>
+                    <button>ig</button>
+                </div>
+                <p>@ Kodo Kepykla 2023</p>
+            </div>
+            <div class="antriKontaktai">
+                <p>Mus rasite:</p>
+                <p>Studentų g. 50,</p>
+                <p>Kaunas</p>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+        <script type="text/javascript" src="functions.js"></script>
+        <script type="text/javascript" src="items.js"></script>
    </body>
 </html>

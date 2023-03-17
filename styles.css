@@ -1,5 +1,10 @@
+/* ----------------- GENERAL ----------------*/
 *{
     margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -7,6 +12,89 @@ body {
     font-family: 'Inter';
 }
 
+button {
+    border: none;
+    cursor: pointer;
+}
+
+/* ---------------- BUTTONS ---------------- */
+.primaryButton {
+    background-color: #FDC284;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #442419;
+    padding: 18px 30px 12px 30px;
+    text-transform: uppercase;
+ }
+
+ .primaryButton:hover {
+    background-color: #f79221;
+ }
+
+.secondaryButton {
+    height: 48px;
+    background-color: #442419;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #f9efe4;
+    padding: 12px 24px;
+    text-transform: uppercase;
+ }
+
+ .secondaryButton:hover{
+    background-color: #a67235;
+ }
+
+.primaryButton > div, .secondaryButton > div {
+    display: flex;
+    gap: 16px;
+}
+
+.headerButton {
+    background-color: transparent;
+    padding: 0px 16px;
+    height: 94px;
+    font-size: 15px;
+    float: right;
+}
+
+.headerButton:hover {
+    background-color: #d3d374;
+}
+
+.ziuretiButton {
+    margin: 312px auto auto auto;
+    width: 196px;
+    z-index: 2;
+}
+
+.logoButton{
+    background-color: transparent;
+    margin-left: 24px;
+}
+
+/* ----------------- HEADER ------------------ */
+.header{
+    height: 94px;
+    background-color: #bbbb5a;
+}
+
+.logo{
+    float: left;
+    height: 86px;
+    width: 148px;
+}
+
+.headerBasket {
+    padding: 0px 40px;
+    float: right;
+}
+
+/* ----------------- MENIU --------------- */
 .rinktisMus {
     display: flex;
     flex-wrap: wrap;
@@ -29,24 +117,6 @@ body {
     margin: 16px 0px 0px 0px;
 }
 
-.primaryButton {
-    background-color: #FDC284;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    border: none;
-    border-radius: 50px;
-    font-weight: 400;
-    font-size: 20px;
-    color: #442419;
-    padding: 18px 30px 12px 30px;
-    cursor: pointer;
-    text-transform: uppercase;
- }
-
-.primaryButton > div, .secondaryButton > div {
-    display: flex;
-    gap: 16px;
-}
-
 .meniuItemGrid{
     display: grid;
     height: 516px;
@@ -55,25 +125,6 @@ body {
 .meniuItem, .ziuretiButton {
     grid-column: 1;
     grid-row: 1;
-}
-
-.secondaryButton {
-    height: 48px;
-    background-color: #442419;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    border: none;
-    border-radius: 50px;
-    font-weight: 400;
-    font-size: 20px;
-    color: #f9efe4;
-    padding: 12px 24px;
-    cursor: pointer;
-    text-transform: uppercase;
- }
-
-.ziuretiButton {
-    margin: 312px auto auto auto;
-    width: 196px;
 }
 
  .meniuIntro {
@@ -104,6 +155,12 @@ body {
     height: 516px;
     background-color: #bbbb5a;
     position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.meniuItem:hover {
+    filter: brightness(80%);
 }
 
 .meniuItem > div {
