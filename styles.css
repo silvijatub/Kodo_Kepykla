@@ -194,3 +194,80 @@ button {
     font-size: 20px;
     color: #FFFFFF;
 }
+
+/*----------------- CONTACTS ------------------*/
+
+.contactsInfo {
+    height: 80vh;
+    width: 100%;
+    background-image: url(https://lh6.googleusercontent.com/HxpkLz-3y_tcpbmve3R6gWK3xJ13WrC9GHfHo_W2BQxeSRdVwaIyfh7yLgL791npYkI=w2400);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts {
+    flex-basis: 31%;
+    background: #F9EFE4;
+    padding: 40px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    height: 30%;
+    margin: 15%;
+}
+
+.contacts p {
+    font-size: 25px;
+    color: #442419;
+}
+
+.contacts img {
+    width:  50px;
+    height: 50px;
+    object-fit: cover;
+    float: left;
+    margin-right: 10px;
+}
+
+.where h2{
+    text-align: center;
+    color: #442419;
+    font-size: 40px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.susisiekimas {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.susisiekimas input {
+    width: 50%;
+}
+
+.column-susisiekimas {
+    flex: 50%;
+    padding: 10px;
+}
+
+.sendButton{
+    background-color: #FDC284;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #442419;
+    padding: 18px 30px 12px 30px;
+    text-transform: uppercase;
+    float: right;
+    margin-right: 25%;
+}
+
+.message {
+    height: 200px;
+}
