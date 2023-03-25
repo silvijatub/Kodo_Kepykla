@@ -380,3 +380,133 @@ h2 {
 .oranzinisAprasymas {
     background-color: #fdc284;
 }
+
+/*----------------- HOMEPAGE ------------------*/
+
+.menuBar {
+    display: flex;
+    background-color: #bbbb5a;
+    height: 70px;
+}
+
+.menuBar > img {
+    height: 50px;
+    border-radius: 10px;
+    
+}
+
+
+.menuButtons > button {
+    height: 50px;
+    background-color: #bbbb5a;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.menuButtons > button:hover {
+    background-color: white;
+}
+
+.apie {
+    display: flex;
+    justify-content: right;
+}
+
+.apieAprasymas {
+    flex-direction: column;
+}
+
+.apieAprasymas > h1 {
+    color: #fdc284;
+}
+
+
+.mygtukas {
+    background-color: #fdc284;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #442419;
+    padding: 18px 30px 12px 30px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.apiePaveiksl > div {
+    height: 400px;
+    width: 400px;
+    background-color: #fdc284;
+    border-radius: 50%;
+}
+
+.apiePaveiksl > img {
+    height: 400px;
+}
+
+.mylimiausi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #442419;
+}
+
+.mylimiausi > h1 {
+    color: #f9efe4;
+}
+
+.mylimiausiuNuotraukos {
+    display: flex;
+    justify-content: center;
+    gap: 0px 48px;
+    padding: 40px 48px 68px 48px;
+}
+
+.mylimiausiuNuotraukos > button {
+    height: 172px;
+    width: 172px;
+    border-radius: 50%;
+    padding: 0px;
+    cursor: pointer;
+    border: none;
+}
+
+.mylimiausiuNuotraukos > button > img{
+    height: 172px;
+    width: 172px;
+    border-radius: 50%;
+}
+
+.mylimiausiuNuotraukos > button > img:hover{
+    transform: scale(1.15);
+}
+
+.laukiameJusu {
+    background-color: #442419;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.laukiameJusu > h1 {
+    color:#f9efe4;
+}
+
+.kepyklosInfo {
+    background-color: #bbbb5a;
+    color: #f9efe4;
+    flex-direction: row;
+}
+
+.kontaktai {
+    background-color: #bbbb5a;
+    color:#f9efe4;
+    display: flex;
+    flex-direction: row;
+}
