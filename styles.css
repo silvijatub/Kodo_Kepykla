@@ -94,6 +94,85 @@ button {
     float: right;
 }
 
+/* ----------------- FONTS ----------------- */
+h1 {
+    font-size: 40px;
+    color: #f79221;
+    margin-bottom: 48px;
+}
+
+h2 {
+    font-family: 'Bathilda';
+    font-size: 60px;
+    color: #442419;
+    font-weight: lighter;
+}
+
+.light30Header {
+    font-size: 30px;
+    color: #f9efe4;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.dark30Header {
+    font-size: 30px;
+    color: #442419;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.dark30Text {
+    font-size: 30px;
+    color: #442419;
+}
+
+.dark25Text {
+    font-size: 25px;
+    color: #442419;
+}
+
+.light30Text {
+    font-size: 30px;
+    color: #f9efe4;
+}
+
+.light25Text {
+    font-size: 25px;
+    color: #f9efe4;
+}
+
+.light20Text {
+    font-size: 20px;
+    color: #f9efe4;
+}
+
+.lightBold20Text {
+    font-size: 20px;
+    color: #f9efe4;
+    font-weight: 600;
+}
+
+.descriptionText {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.black25Text {
+    font-size: 25px;
+    color: #000000;
+}
+
+.blackBold25Text {
+    font-size: 25px;
+    color: #000000;
+    font-weight: 600;
+}
+
 /* ----------------- MENIU --------------- */
 .rinktisMus {
     display: flex;
@@ -106,9 +185,6 @@ button {
 
 .rinktisMus > div {
     width: 400px;
-    color: #f9efe4;
-    font-weight: 400;
-    font-size: 30px;
     text-align: center;
     height: fit-content;
 }
@@ -135,12 +211,6 @@ button {
  .meniuIntro > div {
     padding: 64px 64px 54px 109px;
  }
-
- h1 {
-    font-size: 40px;
-    color: #f79221;
-    margin-bottom: 48px;
-}
 
 .meniu {
     padding: 88px 48px;
@@ -172,27 +242,8 @@ button {
     width: 377px;
 }
 
-.pavadinimas {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 30px;
-    color: #442419;
-}
-
 .kaina {
     margin: 4px 0px;
-    font-weight: 600;
-    font-size: 20px;
-    color: #FFFFFF;
-}
-
-.aprasymas {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    font-weight: 400;
-    font-size: 20px;
-    color: #FFFFFF;
 }
 
 /*----------------- CONTACTS ------------------*/
@@ -219,11 +270,6 @@ button {
     margin: 15%;
 }
 
-.contacts p {
-    font-size: 25px;
-    color: #442419;
-}
-
 .contacts img {
     width:  50px;
     height: 50px;
@@ -232,10 +278,8 @@ button {
     margin-right: 10px;
 }
 
-.where h2{
+.where {
     text-align: center;
-    color: #442419;
-    font-size: 40px;
     margin-top: 25px;
     margin-bottom: 25px;
 }
@@ -256,18 +300,83 @@ button {
 }
 
 .sendButton{
-    background-color: #FDC284;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
-    font-weight: 400;
-    font-size: 20px;
-    color: #442419;
-    padding: 18px 30px 12px 30px;
-    text-transform: uppercase;
     float: right;
     margin-right: 25%;
 }
 
 .message {
     height: 200px;
+}
+
+.apiePaveiksl > div {
+    height: 400px;
+    width: 400px;
+    background-color: #fdc284;
+    border-radius: 50%;
+}
+
+.apiePaveiksl > img {
+    height: 400px;
+}
+
+.mylimiausiuNuotraukos {
+    display: flex;
+    justify-content: center;
+    gap: 0px 48px;
+    padding: 40px 48px 68px 48px;
+}
+
+.mylimiausiuNuotraukos > button {
+    height: 172px;
+    width: 172px;
+    border-radius: 50%;
+    padding: 0px;
+    cursor: pointer;
+    border: none;
+}
+
+.mylimiausiuNuotraukos > button > img{
+    height: 172px;
+    width: 172px;
+    border-radius: 50%;
+}
+
+.mylimiausiuNuotraukos > button > img:hover{
+    transform: scale(1.15);
+}
+
+.mylimiausi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #442419;
+}
+
+.laukiameJusu {
+    background-color: #442419;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.kepyklosInfo {
+    background-color: #bbbb5a;
+    flex-direction: row;
+}
+
+.kontaktai {
+    background-color: #bbbb5a;
+    display: flex;
+    flex-direction: row;
+}
+
+.zaliasAprasymas {
+    background-color: #bbbb5a;
+}
+
+.oranzinisAprasymas {
+    background-color: #fdc284;
 }
