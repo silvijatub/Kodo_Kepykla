@@ -377,10 +377,17 @@ h2 {
     background-color: #bbbb5a;
 }
 
+.zaliasAprasymas img {
+    height: 700px;
+}
+
 .oranzinisAprasymas {
     background-color: #fdc284;
 }
 
+.oranzinisAprasymas img {
+    height: 700px;
+}
 /*----------------- HOMEPAGE ------------------*/
 
 .apie {
