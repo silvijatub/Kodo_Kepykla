@@ -383,57 +383,29 @@ h2 {
 
 /*----------------- HOMEPAGE ------------------*/
 
-.menuBar {
-    display: flex;
-    background-color: #bbbb5a;
-    height: 70px;
-}
-
-.menuBar > img {
-    height: 50px;
-    border-radius: 10px;
-    
-}
-
-
-.menuButtons > button {
-    height: 50px;
-    background-color: #bbbb5a;
-    border: none;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-.menuButtons > button:hover {
-    background-color: white;
-}
-
 .apie {
     display: flex;
-    justify-content: right;
 }
 
 .apieAprasymas {
     flex-direction: column;
+    text-align: right;
+    margin: 150px 150px 150px 0px;
 }
 
 .apieAprasymas > h1 {
     color: #fdc284;
 }
 
+.apieAprasymas > p {
+    margin-top: -30px;
+    margin-bottom: 45px;
+}
 
-.mygtukas {
-    background-color: #fdc284;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    border: none;
-    border-radius: 50px;
-    font-weight: 400;
-    font-size: 20px;
-    color: #442419;
-    padding: 18px 30px 12px 30px;
-    cursor: pointer;
-    width: fit-content;
+.apiePaveiksl {
+    justify-content: left;
+    display: flex;
+    align-items: center;
 }
 
 .apiePaveiksl > div {
@@ -441,10 +413,13 @@ h2 {
     width: 400px;
     background-color: #fdc284;
     border-radius: 50%;
+    margin: 20px 50px;
 }
 
 .apiePaveiksl > img {
-    height: 400px;
+    height: 500px;
+    margin-right: -525px;
+    z-index: 2;
 }
 
 .mylimiausi {
@@ -456,14 +431,15 @@ h2 {
     background-color: #442419;
 }
 
-.mylimiausi > h1 {
-    color: #f9efe4;
+.mylimiausi > p {
+    margin-top: 25px;
 }
 
 .mylimiausiuNuotraukos {
     display: flex;
     justify-content: center;
-    gap: 0px 48px;
+    flex-wrap: wrap;
+    gap: 15px 48px;
     padding: 40px 48px 68px 48px;
 }
 
@@ -486,6 +462,43 @@ h2 {
     transform: scale(1.15);
 }
 
+.mylimiausi > button {
+    margin-bottom: 50px;
+}
+
+.aprasymai {
+    margin: 100px;
+}
+
+.oranzinisAprasymas {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.zaliasAprasymas {
+    display: flex;
+    flex-direction: row;
+    margin: 100px 0px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.oranzinisAprasymas > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    margin: 40px 30px;
+}
+
+.zaliasAprasymas > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: right;
+    margin: 40px 30px;
+}
+
 .laukiameJusu {
     background-color: #442419;
     display: flex;
@@ -494,14 +507,36 @@ h2 {
     flex-direction: column;
 }
 
-.laukiameJusu > h1 {
-    color:#f9efe4;
+.laukiameJusu > p {
+    margin: 50px 0px;
 }
 
 .kepyklosInfo {
+    display: flex;
     background-color: #bbbb5a;
     color: #f9efe4;
     flex-direction: row;
+    margin: 0px 80px 100px;
+}
+
+.kepyklosInfo > .light25Text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    margin: 40px 120px 40px 30px;
+}
+
+.kepyklosInfo > .light25Text > .pav {
+    margin-bottom: 30px;
+}
+
+.kepyklosInfo > .light25Text > .darboLaikas {
+    margin-top: 30px;
+}
+
+.kepyklosInfo > div > img {
+    height: 300px;
 }
 
 .kontaktai {
@@ -509,6 +544,18 @@ h2 {
     color:#f9efe4;
     display: flex;
     flex-direction: row;
+}
+
+.kontaktai > .light20Text {
+    margin: 60px 10px 40px 60px;
+}
+
+.kontaktuTarpas {
+    margin-bottom: 30px;
+}
+
+.kontaktai > .light20Text > div {
+    margin: 20px 0px 60px;
 }
 
 /*----------------- ABOUT US ------------------*/
