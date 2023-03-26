@@ -47,12 +47,29 @@
                     <p>Esame kepykla jau nuo 2023 metų pradžios ir mūsų kepykloje „Kodo kepykla“ ne tik atgyja konditerijos menas, bet ir įgyja kitas, naujas spalvas – prancūziškąsias. Mūsų išskirtiniai pyragaičiai, sausainiai ir kiti kepinai kepami tradiciškais būdais pagal karta iš kartos siųstus, kauptus, puoselėtus receptus bei, žinoma, iš pačių kokybiškiausių ingredientų tik tam, kad pajustumėte tikrą, autentišką Prancūzijos skonį. Kiekvienas kepinys – nuo sviestinių kruasanų iki eklerų – yra pagaminti kruopščiai ir su daug meilės. Kviečiame pasimėgauti subtiliais kepinių skoniais ir patirti prancūziškosios konditerijos magiją.</p>
                 </div>
 
-                <div class="changingImages  dark30Text">   
-                    <img class="changingImage" src="https://i.ibb.co/02Y3p4W/kouign-amann1.png" alt="ChangingIm">
-                    <div class="changingImText">
-                        <p>Kepdami gaminius laikomes prancūziškų tradicijų</p>
+                 <div class="container  dark30Text">
+                  
+                    <div class="changingImages fade">   
+                        <img class="changingImage" src="https://i.ibb.co/02Y3p4W/kouign-amann1.png" alt="ChangingIm">
+                        <div class="changingImText">
+                            <p>Kepdami gaminius laikomes prancūziškų tradicijų</p>
+                        </div>  
+                    </div>   
+        
+                    <div class="changingImages fade">   
+                        <img class="changingImage" src="https://i.ibb.co/cYqxSZd/pain-au-chocolate-1.png" alt="ChangingIm2">
+                        <div class="changingImText">
+                            <p>Naudojame tik pačios aukščiosios kokybės ingridientus</p>
+                        </div>  
                     </div>  
-                </div>   
+
+                    <div class="changingImages fade">   
+                        <img class="changingImage" src="https://i.ibb.co/FX4FMdB/pain-au-chocolate-1-1.png" alt="ChangingIm3">
+                        <div class="changingImText">
+                            <p>Kepame kasdien, todėl mūsų gaminiai visada švieži</p>
+                        </div>  
+                    </div>  
+                </div> 
         </div>
 
 
@@ -77,5 +94,24 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
         <script type="text/javascript" src="functions.js"></script>
         <script type="text/javascript" src="items.js"></script>
+       
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("changingImages");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+
+              slides[slideIndex-1].style.display = "flex";  
+
+              setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+        </script>
    </body>
 </html>
