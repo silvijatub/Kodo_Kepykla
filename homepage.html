@@ -36,7 +36,7 @@
             <p class="light30Header">PIRKĖJŲ MYLIMIAUSI</p>
             <div class="mylimiausiuNuotraukos">
                 <button ng-repeat="x in records" ng-If="x.isFavorite">
-                    <img ng-If="x.isFavorite" src={{x.image}} alt={{x.name}}>
+                    <img ng-If="x.isFavorite" src={{x.image}} alt={{x.name}} ng-click=scrollMenu(x.name)>
                 </button>
             </div>
             <button onclick="location.href='meniu.html'" class="primaryButton">ŽIŪRĖTI VISUS PRODUKTUS</button>
