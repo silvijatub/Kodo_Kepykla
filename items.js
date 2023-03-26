@@ -26,4 +26,7 @@ ItemsList = [
 
 app.controller("controller", function($scope) {
   $scope.records = ItemsList;
+  $scope.scrollMenu = function (id) {
+    window.location.href = "meniu.html#" + id;
+};
 });

@@ -36,7 +36,7 @@
             <p class="light30Header">PIRKĖJŲ MYLIMIAUSI</p>
             <div class="mylimiausiuNuotraukos">
                 <button ng-repeat="x in records" ng-If="x.isFavorite">
-                    <img ng-If="x.isFavorite" src={{x.image}} alt={{x.name}}>
+                    <img ng-If="x.isFavorite" src={{x.image}} alt={{x.name}} ng-click=scrollMenu(x.name)>
                 </button>
             </div>
             <button onclick="location.href='meniu.html'" class="primaryButton">ŽIŪRĖTI VISUS PRODUKTUS</button>
@@ -66,7 +66,7 @@
             </div>
         </div>
 
-        <div class="laukiameJusu">
+        <div #target class="laukiameJusu">
             <p class="light30Header">LAUKIAME JŪSŲ</p>
             <div class="kepyklosInfo">
                 <div class="light25Text">
@@ -102,6 +102,7 @@
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+        <script type="text/javascript" src="functions.js"></script>
         <script type="text/javascript" src="items.js"></script>
      </body>
 </html>
