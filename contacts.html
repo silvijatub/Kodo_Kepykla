@@ -60,33 +60,35 @@
         </div>
 
         <div class="susisiekimas black25Text">
-            <div class="column-susisiekimas">
-                <label for="vardas">Vardas</label>
-                <br>
-                <input type="text" id="vardas">
-            </div>
-    
-            <div class="column-susisiekimas">
-                <label for="pav">Pavardė</label>
-                <br>
-                <input type="text" id="pavardė">
-            </div>
-            
-            <div class="column-susisiekimas">
-                <label for="mail">El. paštas</label>
-                <br>
-                <input type="text" id="mail">
-                <br>
-                <label for="message">Žinutė</label>
-                <br>
-                <input class="message" type="text" id="message">
-            </div>
-
-            <button onclick="myscroll(meniu.id)" class="sendButton primaryButton">
-                <div>
-                    <p>Siųsti</p>
+            <form action="mailto:kodokepykla@gmail.com" method="GET">
+                <div class="column-susisiekimas">
+                    <label for="vardas">Vardas</label>
+                    <br>
+                    <input type="text" id="vardas" required>
                 </div>
-            </button>
+        
+                <div class="column-susisiekimas">
+                    <label for="pav">Pavardė</label>
+                    <br>
+                    <input type="text" id="pavardė" required>
+                </div>
+                
+                <div class="column-susisiekimas">
+                    <label for="mail">El. paštas</label>
+                    <br>
+                    <input type="text" id="mail" required>
+                    <br>
+                    <label for="message">Žinutė</label>
+                    <br>
+                    <input class="message" type="text" id="message" required>
+                </div>
+    
+                <button type="submit" onclick="myscroll(meniu.id)" class="sendButton primaryButton">
+                    <div>
+                        <p>Siųsti</p>
+                    </div>
+                </button>
+           </form>
         </div>
 
         <div class="kontaktai">
