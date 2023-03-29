@@ -81,6 +81,11 @@ button {
 .header{
     height: 94px;
     background-color: #bbbb5a;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
 }
 
 .logo{
@@ -204,6 +209,7 @@ h2 {
 }
 
  .meniuIntro {
+    margin-top: 94px;
     display: flex;
     justify-content: space-between;
  }
@@ -249,12 +255,12 @@ h2 {
 /*----------------- CONTACTS ------------------*/
 
 .contactsInfo {
+    margin-top: 94px;
     height: 80vh;
     width: 100%;
     background-image: url(https://lh6.googleusercontent.com/HxpkLz-3y_tcpbmve3R6gWK3xJ13WrC9GHfHo_W2BQxeSRdVwaIyfh7yLgL791npYkI=w2400);
     background-position: center;
     background-size: cover;
-    position: relative;
     text-align: left;
     display: flex;
     justify-content: center;
@@ -391,6 +397,7 @@ h2 {
 /*----------------- HOMEPAGE ------------------*/
 
 .apie {
+    margin-top: 94px;
     display: flex;
 }
 
