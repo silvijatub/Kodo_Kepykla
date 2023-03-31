@@ -269,7 +269,7 @@ h2 {
 .contacts {
     flex-basis: 31%;
     background: #F9EFE4;
-    padding: 40px 12px;
+    padding: 30px 12px;
     box-sizing: border-box;
     transition: 0.5s;
     height: 30%;
@@ -282,6 +282,10 @@ h2 {
     object-fit: cover;
     float: left;
     margin-right: 10px;
+}
+
+.contacts p {
+    margin-top: 2%;
 }
 
 .where {
