@@ -1,10 +1,3 @@
-<?php
-require_once 'connection.php';
-
-$sql="SELECT * FROM gaminys ORDER BY vertinimo_suma / vertinimo_kiekis DESC";
-$all_products = $conn->query($sql);
-?>
-
 <!DOCTYPE html>
 <html lang="lt">
     <title>Home Page</title>
@@ -19,10 +12,9 @@ $all_products = $conn->query($sql);
         <div class="header">
             <button class="headerBasket headerButton"><img src="https://lh3.googleusercontent.com/L8UqbsKKayiXLOdtIE5GUbcrJap7XeJCZ93LR0PUh6rg6e4fzSYfWbVopYe387jvmu167a0O7QoOR1-etIkmZVmRScCfdK7KHGPija06GSts-9g42T8idDaMryDMwYkQije7E3sRFa_rc4IvGD796l-Eaj2SVESfKEaWWjvs3s4CpFwJDx5WHAUWyQHNk0tgtuUs4emAQMvIa5JFAK53YgB0nVfi4FmIJP6ulzu3eSSarVYbBUdwJTZJZyhDNqVwSW2qBHQFmbziq_OdFNnKZzx96Rtc-6nL4L2ukkt1SidpED4YeMmZn-lst4u4qLSNmLVnxv9qO-1C0YLEXHazkETigojx-YoZWZ8r5Kt_c6usgjJ9hZ4iZ2V8-34BecFqr-XKqVsE4k4tKrnAuwGJC9un9a-KgZTR7FlUwYVdIEDMk48lro4NAKIdBveQUkNRTeJVG2M1y_VAgatyVBj__ltXv5u4YPpVsEFcgQOQHZG0LDZ_WA3sgDJbmtsFFW2ujxdsTReMpPi2B0U5_6Voh5NpHYfAX-V0gvNjKhXfZziue-UbP2ExdutjxejTT8QXeWGj0HTHjOyNKGWYmiMBkmfEUlYEyJSbCXFZlB-LMp7_tIGv7DAWeAjCrYNFD6RE6utBUDbQ5dBN9JcpdRxK_mJ83sM9Lo1BCi-AFj5mxusTuXAUvXPDsxtfbEpiGZaKIvOVdY1msXHB0PAH2lukGlkyr3cH7tB22KC5H3f5ZsRro1nd2KbqynDOEGVbcy3x98yQEPHwegBT3oDOXm6inekIf0HXFCHw9Gh0_-7VRdO74wNWfjiMGooX9GPvpYUCS6WmsQfEyQq27P82cUbJqPnkF63hx-GfOlnw_ugpEo59ckficutx7WIXQEqrsaCXnVVi29RLkEyK0sii2ZwFPM68Bi1lrmlijEomqAoPL9NxP0jT=w40-h36-no?authuser=0" alt="Krepšelis"></button>
             <button onclick="location.href='contacts.html'" class="headerButton">KONTAKTAI</button>
-            <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
             <button class="headerButton">PRIVATUMO POLITIKA</button>
             <button class="headerButton">KARJERA</button>
-            <button onclick="location.href='meniu.php'" class="headerButton">MENIU</button>
+            <button onclick="location.href='meniu.html'" class="headerButton">MENIU</button>
             <button onclick="location.href='aboutus.html'" class="headerButton">APIE MUS</button>
             <button onclick="location.href=''" class="logoButton"><img class="logo" src="https://lh3.googleusercontent.com/8sperpVU0RndjYvu9XUULVmaswL-Gkw0RN_BADTMxpOayFjsFgVj0B2kQnbvXaAFZDw=w2400" alt="Logo"></button>
         </div>
@@ -42,21 +34,11 @@ $all_products = $conn->query($sql);
         <div class="mylimiausi">
             <p class="light30Header">PIRKĖJŲ MYLIMIAUSI</p>
             <div class="mylimiausiuNuotraukos">
-            <?php
-                $count = 0;
-                while($row = mysqli_fetch_assoc($all_products)){
-                    if ($count < 5){
-                        $count++;
-                        $pavadinimas=$row["pavadinimas"];
-            ?>
-                <button>
-                    <img src="<?php echo $row["foto_url"]; ?>" alt="<?php echo $row["pavadinimas"]; ?>" onclick="location.href='meniu.php#<?php echo $row['pavadinimas']; ?>'">
+                <button ng-repeat="x in records" ng-If="x.isFavorite">
+                    <img ng-If="x.isFavorite" src={{x.image}} alt={{x.name}} ng-click=scrollMenu(x.name)>
                 </button>
-            <?php
-                    }}
-            ?>
             </div>
-            <button onclick="location.href='meniu.php'" class="primaryButton">ŽIŪRĖTI VISUS PRODUKTUS</button>
+            <button onclick="location.href='meniu.html'" class="primaryButton">ŽIŪRĖTI VISUS PRODUKTUS</button>
         </div>
 
         <div class="aprasymai">
@@ -117,6 +99,9 @@ $all_products = $conn->query($sql);
                 <p>Kaunas</p>
             </div>
         </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+        <script type="text/javascript" src="items.js"></script>
      </body>
 </html>
 
