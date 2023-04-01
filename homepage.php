@@ -1,3 +1,10 @@
+<?php
+require_once 'connection.php';
+
+$sql="SELECT * FROM gaminys ORDER BY vertinimo_suma / vertinimo_kiekis DESC";
+$all_products = $conn->query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="lt">
     <title>Home Page</title>
@@ -14,7 +21,7 @@
             <button onclick="location.href='contacts.html'" class="headerButton">KONTAKTAI</button>
             <button class="headerButton">PRIVATUMO POLITIKA</button>
             <button class="headerButton">KARJERA</button>
-            <button onclick="location.href='meniu.html'" class="headerButton">MENIU</button>
+            <button onclick="location.href='meniu.php'" class="headerButton">MENIU</button>
             <button onclick="location.href='aboutus.html'" class="headerButton">APIE MUS</button>
             <button onclick="location.href=''" class="logoButton"><img class="logo" src="https://lh3.googleusercontent.com/8sperpVU0RndjYvu9XUULVmaswL-Gkw0RN_BADTMxpOayFjsFgVj0B2kQnbvXaAFZDw=w2400" alt="Logo"></button>
         </div>
@@ -34,11 +41,21 @@
         <div class="mylimiausi">
             <p class="light30Header">PIRKĖJŲ MYLIMIAUSI</p>
             <div class="mylimiausiuNuotraukos">
-                <button ng-repeat="x in records" ng-If="x.isFavorite">
-                    <img ng-If="x.isFavorite" src={{x.image}} alt={{x.name}} ng-click=scrollMenu(x.name)>
+            <?php
+                $count = 0;
+                while($row = mysqli_fetch_assoc($all_products)){
+                    if ($count < 5){
+                        $count++;
+                        $pavadinimas=$row["pavadinimas"];
+            ?>
+                <button>
+                    <img src="<?php echo $row["foto_url"]; ?>" alt="<?php echo $row["pavadinimas"]; ?>" onclick="location.href='meniu.php#<?php echo $row['pavadinimas']; ?>'">
                 </button>
+            <?php
+                    }}
+            ?>
             </div>
-            <button onclick="location.href='meniu.html'" class="primaryButton">ŽIŪRĖTI VISUS PRODUKTUS</button>
+            <button onclick="location.href='meniu.php'" class="primaryButton">ŽIŪRĖTI VISUS PRODUKTUS</button>
         </div>
 
         <div class="aprasymai">
@@ -99,9 +116,6 @@
                 <p>Kaunas</p>
             </div>
         </div>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
-        <script type="text/javascript" src="items.js"></script>
      </body>
 </html>
 
