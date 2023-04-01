@@ -60,33 +60,35 @@
         </div>
 
         <div class="susisiekimas black25Text">
-            <div class="column-susisiekimas">
-                <label for="vardas">Vardas</label>
-                <br>
-                <input type="text" id="vardas">
-            </div>
-    
-            <div class="column-susisiekimas">
-                <label for="pav">Pavardė</label>
-                <br>
-                <input type="text" id="pavardė">
-            </div>
-            
-            <div class="column-susisiekimas">
-                <label for="mail">El. paštas</label>
-                <br>
-                <input type="text" id="mail">
-                <br>
-                <label for="message">Žinutė</label>
-                <br>
-                <input class="message" type="text" id="message">
-            </div>
-
-            <button onclick="myscroll(meniu.id)" class="sendButton primaryButton">
-                <div>
-                    <p>Siųsti</p>
+            <form action="mailto:kodokepykla@gmail.com" method="GET">
+                <div class="column-susisiekimas">
+                    <label for="vardas">Vardas</label>
+                    <br>
+                    <input type="text" id="vardas" required>
                 </div>
-            </button>
+        
+                <div class="column-susisiekimas">
+                    <label for="pav">Pavardė</label>
+                    <br>
+                    <input type="text" id="pavardė" required>
+                </div>
+                
+                <div class="column-susisiekimas">
+                    <label for="mail">El. paštas</label>
+                    <br>
+                    <input type="text" id="mail" required>
+                    <br>
+                    <label for="message">Žinutė</label>
+                    <br>
+                    <input class="message" type="text" id="message" required>
+                </div>
+    
+                <button type="submit" onclick="myscroll(meniu.id)" class="sendButton primaryButton">
+                    <div>
+                        <p>Siųsti</p>
+                    </div>
+                </button>
+           </form>
         </div>
 
         <div class="kontaktai">
@@ -95,8 +97,8 @@
                 <p>kodokepykla@gmail.com</p>
                 <p>+37065658564</p>
                 <div>
-                    <button>fb</button>
-                    <button>ig</button>
+                    <a href="https://www.facebook.com"><img class="socials" src="https://lh3.googleusercontent.com/LevHz4AOP4W_CeqKZvs8bX4hr79W_iYtyn_0D9doN7LmLvbhdUU0eP0iGnbLBT9Pe_I=w2400"></a>
+                    <a href="https://www.instagram.com"><img class="socials" src="https://lh4.googleusercontent.com/RIUGBPCHD63KkA8iWPLKbzXgXTH5Y86FBQggGL_ZyJpSWz5IvSahyFw8Wjttsepyr8Q=w2400"></a>
                 </div>
                 <p>@ Kodo Kepykla 2023</p>
             </div>
