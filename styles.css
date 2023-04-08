@@ -693,58 +693,6 @@ to {opacity: 1}
     font-weight: 600;
  }
 
- .numberOfItems{
-    width: 120px;
-    height: 60px;
-    display: flex;
-    margin-top: 30px;
- }
-
- .minus{
-    background-color: #fdc284;
-    color: #ffffff;
-    font: bold;
-   padding: 10px 15px 10px 15px;
-  align-items: center;
-  justify-content: center;
-
-
- }
-
- .minusIcon{
-    color: #ffffff;
- }
-
- .plus{
-    background-color: #fdc284;
-    color: #ffffff;
-    font: bold;
-    padding: 10px 15px 10px 15px;
-    align-items: center;
-    justify-content: center;
- }
-
- .plusIcon{
-    color: #ffffff;
- }
-
- .numberOfItems2{
-    background-color: #ffffff;
-    font: bold;
-    padding: 10px 30px 10px 30px;
-   
- }
-
- .minus:hover{
-   background-color: #f79221;
-    cursor: pointer;
- }
-
- .plus:hover{
-    background-color: #f79221;
-    cursor: pointer;
- }
-
  
 .ziuretiButton2 {
     margin: 40px auto auto auto;
@@ -772,7 +720,6 @@ to {opacity: 1}
     margin-top: 30px;
     margin-bottom: 60px;
 }
-
 
 
 
