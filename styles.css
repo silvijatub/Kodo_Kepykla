@@ -656,4 +656,185 @@ from {opacity: .4}
 to {opacity: 1}
 }
 
+/* Product page */
 
+.productImage{
+    width: 631px;
+   /* margin-right: 50px;*/
+}
+
+.productPage {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .productPage > div {
+    padding: 84px 60px 64px 60px;
+ }
+
+ .aboutProduct{
+    text-align: justify;
+    line-height: 50px;
+    margin-bottom: 20px;
+
+ }
+
+ .productName{
+    color: #442419;
+    margin-bottom: 10px;
+ }
+
+ .productPrice{
+    color: #E69D48;
+    font: bold;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+ }
+
+ .numberOfItems{
+    width: 120px;
+    height: 60px;
+    display: flex;
+    margin-top: 30px;
+ }
+
+ .minus{
+    background-color: #fdc284;
+    color: #ffffff;
+    font: bold;
+   padding: 10px 15px 10px 15px;
+  align-items: center;
+  justify-content: center;
+
+
+ }
+
+ .minusIcon{
+    color: #ffffff;
+ }
+
+ .plus{
+    background-color: #fdc284;
+    color: #ffffff;
+    font: bold;
+    padding: 10px 15px 10px 15px;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .plusIcon{
+    color: #ffffff;
+ }
+
+ .numberOfItems2{
+    background-color: #ffffff;
+    font: bold;
+    padding: 10px 30px 10px 30px;
+   
+ }
+
+ .minus:hover{
+   background-color: #f79221;
+    cursor: pointer;
+ }
+
+ .plus:hover{
+    background-color: #f79221;
+    cursor: pointer;
+ }
+
+ 
+.ziuretiButton2 {
+    margin: 40px auto auto auto;
+    width: 196px;
+    z-index: 2;
+}
+
+.productInfo {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    color: #442419;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.papildInfo{
+    margin-top: 30px;
+}
+
+.papildInfo2 {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+
+
+
+
+
+form {
+    width: 300px;
+
+    text-align: center;
+    padding-top: 20px;
+    display: flex;
+    vertical-align: middle;
+
+  }
+
+.value-button {
+    display: inline-block;
+    margin: 0px;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px 0;
+    background: #f3e0c1;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: white;
+  }
+  
+  .value-button:hover {
+    cursor: pointer;
+    color: #f79221;
+  }
+  
+  form #decrease {
+    margin-right: -4px;
+  }
+  
+  form #increase {
+   margin-left: 1.5px;
+  }
+  
+  form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  input#number {
+    text-align: center;
+    border: none;
+    margin: 0px;
+    width: 120px;
+    height: 60px;
+    font-size: large;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
