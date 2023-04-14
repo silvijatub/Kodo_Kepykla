@@ -2,7 +2,7 @@
 require_once 'connection.php';
 
 $sql="SELECT * FROM gaminys ORDER BY vertinimo_suma / vertinimo_kiekis DESC";
-$all_products = $conn->query($sql);
+$all_products = $connection->query($sql);
 ?>
 
 <!DOCTYPE html>
