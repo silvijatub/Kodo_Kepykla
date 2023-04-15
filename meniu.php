@@ -10,8 +10,8 @@ $all_products = $connection->query($sql);
    <head>
         <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">  
-	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles.css">
         <meta charset="UTF-8">
@@ -90,7 +90,7 @@ $all_products = $connection->query($sql);
                                         <li class="list-inline-item"><i class="fa fa-star-o" onclick="dialog()"></i></li>
                                         <?php
                                 }?>
-                                    <li class="list-inline-item"><p class="dark16Text" style="margin:0px;">(<?php echo $row['vertinimo_kiekis']; ?>)</p></li>
+                                    <li class="list-inline-item dark16Text">(<?php echo $row['vertinimo_kiekis']; ?>)</li>
                                 <?php
                             ?>                
                             </ul>

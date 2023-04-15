@@ -18,6 +18,10 @@ button {
     cursor: pointer;
 }
 
+button:focus {
+    outline: none; 
+}
+
 /* ---------------- BUTTONS ---------------- */
 .primaryButton {
     background-color: #FDC284;
@@ -718,4 +722,3 @@ to {opacity: 1}
     text-decoration: none;
     cursor: pointer;
   }
-
