@@ -10,7 +10,9 @@ $all_products = $connection->query($sql);
    <head>
         <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">  
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles.css">
         <meta charset="UTF-8">
    </head>
@@ -31,7 +33,7 @@ $all_products = $connection->query($sql);
                 <h1>IŠSIRINKITE TOBULUS KEPINIUS IŠ PLATAUS MŪSŲ ASORTIMENTO!</h1>
                 <button onclick="myscroll(meniu.id)" class="primaryButton">
                     <div>
-                        <img src="images/lookIcon.png" alt="Žiūrėti meniu">
+                        <img class="icon" src="images/lookIcon.png" alt="Žiūrėti meniu">
                         <p>Žiūrėti</p>
                     </div>
                 </button>
@@ -57,18 +59,43 @@ $all_products = $connection->query($sql);
         <div class="meniu" id="meniu">
             <?php
                 while($row = mysqli_fetch_assoc($all_products)){
+                    $amount = $row['kiekis'];
+                    $output = "Į krepšelį";
+                    if ($amount == '0'){ $output = "Neturime";}
             ?>
             <div class="meniuItemGrid">
-                <button class="secondaryButton ziuretiButton">
+                <button class="secondaryButton ziuretiButton" <?php if ($amount == '0'){ ?> disabled <?php   } ?>>
                     <div>
-                        <img src="images/basketIcon.png" alt="Į krepšelį">
-                        <p>Į krepšelį</p>
+                        <img class="icon" src="images/basketIcon.png" alt="Į krepšelį">
+                        <p><?php echo $output ?></p>
                     </div>
                 </button>
                 <div class="meniuItem" id="<?php echo $row["pavadinimas"]; ?>">
-                    <img src="<?php echo $row["foto_url"]; ?>" alt="<?php echo $row["pavadinimas"]; ?>">
+                    <img src="<?php echo $row["foto_url"]; ?>" alt="<?php echo $row["pavadinimas"]; ?>">                    
                     <div> 
-                        <p class="dark30Header"><?php echo $row["pavadinimas"]; ?></p>
+                        <p class="dark30Header" style="margin:0px;"><?php echo $row["pavadinimas"]; ?></p>
+                        
+                        <div class="star-rating">
+                            <ul class="list-inline" style="margin:0px">
+                            <?php 
+                                if ($row['vertinimo_kiekis'] == '0') {$stars = 0;}
+                                else { $stars = round($row['vertinimo_suma']/$row['vertinimo_kiekis']);}
+                                for ($star = 0; $star < $stars; $star++) {
+                                    ?>
+                                        <li class="list-inline-item"><i class="fa fa-star" onclick="dialog()"></i></li>
+                                        <?php
+                                }
+                                for ($star = 0; $star < 5- $stars; $star++) {
+                                    ?>
+                                        <li class="list-inline-item"><i class="fa fa-star-o" onclick="dialog()"></i></li>
+                                        <?php
+                                }?>
+                                    <li class="list-inline-item"><p class="dark16Text" style="margin:0px;">(<?php echo $row['vertinimo_kiekis']; ?>)</p></li>
+                                <?php
+                            ?>                
+                            </ul>
+                        </div>
+
                         <p class="kaina lightBold20Text"><?php echo $row["kaina"]; ?> € / vnt.</p>
                         <p class="descriptionText"><?php echo $row["aprasymas"]; ?></p>
                     </div>
@@ -77,6 +104,13 @@ $all_products = $connection->query($sql);
             <?php
                 }
             ?>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <button class="close" onclick="closeDialog()">&times;</button>
+                <p class="dark16Text">Šią prekę gali įvertinti tik ją įsigiję klientai.</p>
+                <p class="dark16Text">Kviečiame užsisakyti šią prekę dabar!</p>
+            </div>
         </div>
 
         <div class="laukiameJusu">
@@ -115,5 +149,6 @@ $all_products = $connection->query($sql);
         </div>
 
         <script type="text/javascript" src="functions.js"></script>
+        <script type="text/javascript" src="modalDialog.js"></script>
    </body>
 </html>
