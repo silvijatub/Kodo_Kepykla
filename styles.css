@@ -310,7 +310,7 @@ h2 {
 }
 
 .susisiekimas {
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
     margin-bottom: 10%;
 }
@@ -320,14 +320,12 @@ h2 {
 }
 
 .column-susisiekimas {
-    flex: 50%;
     padding: 10px;
-    margin: auto;
 }
 
 .sendButton{
-    float: right;
-    margin-right: 25%;
+    margin: auto;
+    width: 120px;
 }
 
 .message {
@@ -737,16 +735,13 @@ to {opacity: 1}
     margin-bottom: 60px;
 }
 
-
-
-
-
 form {
-    width: 300px;
+    width: 80%;
     text-align: center;
-    padding-top: 20px;
+    margin: auto;
     display: flex;
     vertical-align: middle;
+    flex-direction: column;
   }
 
 .value-button {
