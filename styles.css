@@ -762,7 +762,7 @@ form {
     margin: auto;
     display: flex;
     vertical-align: middle;
-    flex-direction: column;
+    flex-direction: row;
   }
 
 .value-button {
