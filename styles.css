@@ -108,7 +108,7 @@ h1 {
 
 h2 {
     font-family: 'Bathilda';
-    font-size: 60px;
+    font-size: 50px;
     color: #442419;
     font-weight: lighter;
 }
@@ -122,6 +122,13 @@ h2 {
 
 .dark30Header {
     font-size: 30px;
+    color: #442419;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.dark25Header {
+    font-size: 25px;
     color: #442419;
     font-weight: 600;
     text-transform: uppercase;
@@ -148,12 +155,19 @@ h2 {
 }
 
 .light20Text {
+    line-height: 30px;
     font-size: 20px;
     color: #f9efe4;
 }
 
+.light16Text {
+    line-height: 24px;
+    font-size: 16px;
+    color: #f9efe4;
+}
+
 .lightBold20Text {
-    font-size: 20px;
+    font-size: 16px;
     color: #f9efe4;
     font-weight: 600;
 }
@@ -163,12 +177,13 @@ h2 {
     overflow: hidden;
     white-space: nowrap;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     color: #FFFFFF;
 }
 
-.black25Text {
-    font-size: 25px;
+.black20Text {
+    font-size: 20px;
+    line-height: 30px;
     color: #000000;
 }
 
@@ -182,14 +197,14 @@ h2 {
 .rinktisMus {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 8%;
     justify-content: center;
     padding: 64px 20px;
     background-color: #442419;
 }
 
 .rinktisMus > div {
-    width: 400px;
+    width: 300px;
     text-align: center;
     height: fit-content;
 }
@@ -219,10 +234,10 @@ h2 {
  }
 
 .meniu {
-    padding: 88px 48px;
+    padding: 60px 48px;
     display: flex;
     flex-wrap: wrap;
-    gap: 80px 24px;
+    gap: 40px 24px;
     justify-content: center;
 }
 
@@ -267,9 +282,9 @@ h2 {
 }
 
 .contacts {
-    flex-basis: 31%;
+    flex-basis: 40%;
     background: #F9EFE4;
-    padding: 30px 12px;
+    padding: 30px 40px;
     box-sizing: border-box;
     transition: 0.5s;
     height: 30%;
@@ -300,13 +315,14 @@ h2 {
     margin-bottom: 10%;
 }
 
-.susisiekimas input {
+.susisiekimas > input {
     width: 50%;
 }
 
 .column-susisiekimas {
     flex: 50%;
     padding: 10px;
+    margin: auto;
 }
 
 .sendButton{
@@ -387,16 +403,8 @@ h2 {
     background-color: #bbbb5a;
 }
 
-.zaliasAprasymas img {
-    height: 700px;
-}
-
 .oranzinisAprasymas {
     background-color: #fdc284;
-}
-
-.oranzinisAprasymas img {
-    height: 700px;
 }
 /*----------------- HOMEPAGE ------------------*/
 
@@ -458,7 +466,7 @@ h2 {
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px 48px;
-    padding: 40px 48px 68px 48px;
+    padding: 40px 48px 40px 48px;
 }
 
 .mylimiausiuNuotraukos > button {
@@ -481,11 +489,11 @@ h2 {
 }
 
 .mylimiausi > button {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .aprasymai {
-    margin: 100px;
+    margin: 60px 100px;
 }
 
 .oranzinisAprasymas {
@@ -497,7 +505,7 @@ h2 {
 .zaliasAprasymas {
     display: flex;
     flex-direction: row;
-    margin: 100px 0px;
+    margin: 40px 0px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -506,7 +514,8 @@ h2 {
     justify-content: center;
     flex-direction: column;
     text-align: left;
-    margin: 40px 30px;
+    margin: auto 60px auto 100px;
+    padding: 0px;
 }
 
 .zaliasAprasymas > div {
@@ -514,7 +523,13 @@ h2 {
     justify-content: center;
     flex-direction: column;
     text-align: right;
-    margin: 40px 30px;
+    margin: auto 100px auto 60px;
+    padding: 0px;
+}
+
+.aprasymoimg {
+    width: 300px;
+    height: 300px;
 }
 
 .laukiameJusu {
@@ -534,10 +549,10 @@ h2 {
     background-color: #bbbb5a;
     color: #f9efe4;
     flex-direction: row;
-    margin: 0px 80px 100px;
+    margin: 0px 80px 60px;
 }
 
-.kepyklosInfo > .light25Text {
+.kepyklosInfo > .light20Text {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -545,11 +560,11 @@ h2 {
     margin: 40px 120px 40px 30px;
 }
 
-.kepyklosInfo > .light25Text > .pav {
+.kepyklosInfo > .light20Text > .pav {
     margin-bottom: 30px;
 }
 
-.kepyklosInfo > .light25Text > .darboLaikas {
+.kepyklosInfo > .light20Text > .darboLaikas {
     margin-top: 30px;
 }
 
@@ -558,21 +573,22 @@ h2 {
 }
 
 .kontaktai {
+    width: 100%;
     background-color: #bbbb5a;
     color:#f9efe4;
     display: flex;
     flex-direction: row;
 }
 
-.kontaktai > .light20Text {
-    margin: 60px 10px 40px 60px;
+.kontaktai > .light16Text {
+    margin: 40px 10px 40px 40px;
 }
 
 .kontaktuTarpas {
     margin-bottom: 30px;
 }
 
-.kontaktai > .light20Text > div {
+.kontaktai > .light16Text > div {
     margin: 20px 0px 60px;
 }
 
@@ -605,7 +621,7 @@ h2 {
 }
 
 .kasMes{
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     text-align: center;
     width: 1146px;
 }
@@ -727,12 +743,10 @@ to {opacity: 1}
 
 form {
     width: 300px;
-
     text-align: center;
     padding-top: 20px;
     display: flex;
     vertical-align: middle;
-
   }
 
 .value-button {
@@ -792,24 +806,16 @@ form {
     margin-top: 94px;
     display: flex;
     justify-content: space-between;
-    height: 800px;
     margin-right: 150px;
     margin-left: 150px;
     text-align: justify;
   }
 
   .tekstas {
-    margin-top: 50px;
+    margin: 60px 0px;
     width: 100%;
   }
 
-  .tekstas > h3 {
-    color:#442419;
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 30px;
- }
-
- .tekstas > p {
-    font-size: 24px;
- }
+  .tekstas > p {
+    margin-bottom: 20px;
+  }
