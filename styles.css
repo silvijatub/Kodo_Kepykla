@@ -56,7 +56,7 @@ button {
 
 .headerButton {
     background-color: transparent;
-    padding: 0px 16px;
+    padding: 0px 24px;
     height: 94px;
     font-size: 15px;
     float: right;
@@ -838,15 +838,13 @@ form {
     position:static;
   }
 
-  .nav-menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
-  }
 
   .nav-branding {
     font-size: 2rem;
+  }
+
+  .nav-item{
+    float: left;
   }
 
   .nav-link {
@@ -872,7 +870,7 @@ form {
     background-color:#f3e0c1;
   }
 
-  @media(max-width:1000px){
+  @media(max-width:1100px){
     .menu-bar{
         display:block;
     }
@@ -891,8 +889,8 @@ form {
 
     .nav-menu {
         position:fixed;
-        left: -100%;
-        top: 70px;
+        right: -100%;
+        top: 94px;
         gap: 0;
         flex-direction: column;
         background-color: #bbbb5a;
@@ -901,6 +899,7 @@ form {
         transition: 0.3s;
         padding: 0;
         list-style-type: none;
+        height: 100%;
     }
 
     .headerButton{
@@ -908,11 +907,11 @@ form {
     }
 
     .nav-item{
-        margin: 16px 0;
+        margin: 0px 0;
     }
 
     .nav-menu.active{
-        left: 0;
+        right: 0;
 
     }
   }
