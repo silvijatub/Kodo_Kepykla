@@ -59,33 +59,33 @@ $all_products = $connection->query($sql);
         </div>
 
         <div class="aprasymai">
-            <div class="oranzinisAprasymas">
+        <div class="oranzinisAprasymas">
                 <div>
                     <h2>Lorem Ipsum</h2>
-                    <p class="light30Text">dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet </p>
+                    <p class="light20Text">dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet </p>
                 </div>
-                <img src="https://lh3.googleusercontent.com/4-if2dwav6dandec3J8y3SNpCGsSg78sZqR-udURvoKTL1aYO_F4kfX1T1c_4kIDGn8=w2400" alt="Aprašymo nuotrauka">
+                <img class="aprasymoimg" src="https://lh3.googleusercontent.com/4-if2dwav6dandec3J8y3SNpCGsSg78sZqR-udURvoKTL1aYO_F4kfX1T1c_4kIDGn8=w2400" alt="Aprašymo nuotrauka">
             </div>
             <div class="zaliasAprasymas">
-                <img src="https://lh6.googleusercontent.com/vye5XF4AFPWqthCaBpyvr9lKhUoqbE2QZW_RXuwrd_ftcuP0NirMWQoA0irkm_1-Y6k=w2400" alt="Aprašymo nuotrauka">
+                <img class="aprasymoimg" src="https://lh6.googleusercontent.com/vye5XF4AFPWqthCaBpyvr9lKhUoqbE2QZW_RXuwrd_ftcuP0NirMWQoA0irkm_1-Y6k=w2400" alt="Aprašymo nuotrauka">
                 <div>
                     <h2>Lorem Ipsum</h2>
-                    <p class="light30Text">dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet </p>
+                    <p class="light20Text">dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet </p>
                 </div>
             </div>
             <div class="oranzinisAprasymas">
                 <div>
                     <h2>Lorem Ipsum</h2>
-                    <p class="light30Text">dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet </p>
+                    <p class="light20Text">dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet </p>
                 </div>
-                <img src="https://lh5.googleusercontent.com/WhWxT-AVjZfqSfsnNN7u0fhD0WKwhbth5HThsfPOHGYzsiJ3Hq0eRBuiut4nq7DV7zo=w2400" alt="Aprašymo nuotrauka">
+                <img class="aprasymoimg" src="https://lh5.googleusercontent.com/WhWxT-AVjZfqSfsnNN7u0fhD0WKwhbth5HThsfPOHGYzsiJ3Hq0eRBuiut4nq7DV7zo=w2400" alt="Aprašymo nuotrauka">
             </div>
         </div>
 
         <div class="laukiameJusu">
             <p class="light30Header">LAUKIAME JŪSŲ</p>
             <div class="kepyklosInfo">
-                <div class="light25Text">
+                <div class="light20Text">
                     <p class="pav">Kodo Kepykla</p>
                     <p>Studentų g. 50,</p>
                     <p>Kaunas</p>
@@ -94,29 +94,36 @@ $all_products = $connection->query($sql);
                     <p>VI-VII | 10:00 - 16:00</p>
                 </div>
                 <div class="zemelapis">
-                    <img src="https://lh3.googleusercontent.com/w7rZALBmnXecPbEx7JVWT33gck1QuxluC4XdV9kl57XGHkicbUThwGQ5nA1O8bI3cQ7UN8A91kUxgRbQjzs4W9Zc1yvRDu1Lz1RdrJ-d2lxsNSVGrmUyM2Qtm8wyeTZld_TMszZW0GgReguELIeDsCH-n7oTEGbtOqca0W5CoOdTajcGLk69tvLmvdPX45xkZqc0sa7OYRimqUhNzk72cv6RZrKGpTQRpWyhPGTa3sVLjPzOeFcmo3A3gNIUrbxxIJ7PjlEDYD0mAXEbaSkEgRQDuQaLSJj9Fb_m4JRNQjwy_x6bzAL3QHjeKWSlO8Oq_L-El3BC7j9qk8oADg7fLOsjxkddjo7vvceQ73sRIXXnaJRr_zAq4QlmBw8Vpo4_L1oblhRpvWawaYP-3R8JsXimPZQ69HQg-Hm-nhj8j4B02AO2gugGZqNZoq5wlHTIUlj9tuGgTFchTqWIrktZMGvM9pn3IDFZtPNZSj7AnwbuZ8l5q_jm5tbA85LTxFcJeYmcm_kQbHuagQmJYhHZs2hNbWaVROelDaAVHrtG9J5mm1Cg4qZkdnz-FUmN94EnBAKbkORquSjIFQEcw0JLEbLBJSIhAGBnsEWBTVB5zeZgLqxixZZwCuymVc5F8ivyYVkyDEucvY05b2HpKYOxF7SY3C0jHYMfFB-xfSjoP-21fOMl-cp0PnByswi5XVYfdzqIm-xd4Hxx3lGJg3QRckASGdd6VXIKt4IgTY-Icw5icKlA5_ONqjjAkvbGl9FdgPY4y_lz-C7pP-_poLork_ZDrdbNR3NpBNjTnrrzeLXK-VzMQT_RGN9rtbRBgUA-HxJ7X9jhsB_Tin_b0GoUqrdMIO2sJ8F_OAEE61XmpG2fnVm07rKFgp62HEanMg82C0t3VcNFtg2pZFSMO9SDv1GAsI5klz7dhtoIhmAByukEFkaY=w647-h439-no?authuser=0" alt="Žemėlapis">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Studentų g. 50, Kaunas&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <a href="https://2yu.co">2yu</a>
+                            <br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style>
+                            <a href="https://embedgooglemap.2yu.co/">html embed google map</a>
+                            <style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="kontaktai">
-            <div class="light20Text">
-                <p class="kontaktuTarpas">Susisiekite su mumis:</p>
+            <div class="light16Text">
+                <p class="lightBold20Text">Susisiekite su mumis:</p>
                 <p>kodokepykla@gmail.com</p>
                 <p>+37065658564</p>
                 <div>
-                    <button>fb</button>
-                    <button>ig</button>
+                    <a href="https://www.facebook.com"><img class="socials" src="https://lh3.googleusercontent.com/LevHz4AOP4W_CeqKZvs8bX4hr79W_iYtyn_0D9doN7LmLvbhdUU0eP0iGnbLBT9Pe_I=w2400"></a>
+                    <a href="https://www.instagram.com"><img class="socials" src="https://lh4.googleusercontent.com/RIUGBPCHD63KkA8iWPLKbzXgXTH5Y86FBQggGL_ZyJpSWz5IvSahyFw8Wjttsepyr8Q=w2400"></a>
                 </div>
                 <p>@ Kodo Kepykla 2023</p>
             </div>
-            <div class="light20Text">
-                <p class="kontaktuTarpas">Mus rasite:</p>
+            <div class="light16Text">
+                <p class="lightBold20Text">Mus rasite:</p>
                 <p>Studentų g. 50,</p>
                 <p>Kaunas</p>
             </div>
         </div>
-     </body>
 </html>
 
 

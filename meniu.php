@@ -41,7 +41,7 @@ $all_products = $connection->query($sql);
             <img class="meniuImage" src="images/CroissantBackground.png" alt="Kruasanai">
         </div>
 
-        <div class="rinktisMus light30Text">
+        <div class="rinktisMus light25Text">
             <div class="rinktisMusElementas">
                 <img src="images/eggsIcon.png" alt="Ekologiški ingredientai">
                 <p>Ekologiški, aukščiausios kokybės ingredientai</p>
@@ -73,7 +73,7 @@ $all_products = $connection->query($sql);
                 <div class="meniuItem" id="<?php echo $row["pavadinimas"]; ?>">
                     <img src="<?php echo $row["foto_url"]; ?>" alt="<?php echo $row["pavadinimas"]; ?>">                    
                     <div> 
-                        <p class="dark30Header" style="margin:0px;"><?php echo $row["pavadinimas"]; ?></p>
+                        <p class="dark25Header" style="margin:0px;"><?php echo $row["pavadinimas"]; ?></p>
                         
                         <div class="star-rating">
                             <ul class="list-inline" style="margin:0px">
@@ -105,34 +105,36 @@ $all_products = $connection->query($sql);
                 }
             ?>
 
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <button class="close" onclick="closeDialog()">&times;</button>
-                <p class="dark16Text">Šią prekę gali įvertinti tik ją įsigiję klientai.</p>
-                <p class="dark16Text">Kviečiame užsisakyti šią prekę dabar!</p>
-            </div>
         </div>
 
         <div class="laukiameJusu">
             <p class="light30Header">LAUKIAME JŪSŲ</p>
             <div class="kepyklosInfo">
-                <div class="light25Text">
-                    <p>Kodo Kepykla</p>
+                <div class="light20Text">
+                    <p class="pav">Kodo Kepykla</p>
                     <p>Studentų g. 50,</p>
                     <p>Kaunas</p>
-                    <p>Darbo laikas:</p>
+                    <p class="darboLaikas">Darbo laikas:</p>
                     <p>I-V | 09:00 - 18:00</p>
                     <p>VI-VII | 10:00 - 16:00</p>
                 </div>
                 <div class="zemelapis">
-                    <img src="https://lh3.googleusercontent.com/w7rZALBmnXecPbEx7JVWT33gck1QuxluC4XdV9kl57XGHkicbUThwGQ5nA1O8bI3cQ7UN8A91kUxgRbQjzs4W9Zc1yvRDu1Lz1RdrJ-d2lxsNSVGrmUyM2Qtm8wyeTZld_TMszZW0GgReguELIeDsCH-n7oTEGbtOqca0W5CoOdTajcGLk69tvLmvdPX45xkZqc0sa7OYRimqUhNzk72cv6RZrKGpTQRpWyhPGTa3sVLjPzOeFcmo3A3gNIUrbxxIJ7PjlEDYD0mAXEbaSkEgRQDuQaLSJj9Fb_m4JRNQjwy_x6bzAL3QHjeKWSlO8Oq_L-El3BC7j9qk8oADg7fLOsjxkddjo7vvceQ73sRIXXnaJRr_zAq4QlmBw8Vpo4_L1oblhRpvWawaYP-3R8JsXimPZQ69HQg-Hm-nhj8j4B02AO2gugGZqNZoq5wlHTIUlj9tuGgTFchTqWIrktZMGvM9pn3IDFZtPNZSj7AnwbuZ8l5q_jm5tbA85LTxFcJeYmcm_kQbHuagQmJYhHZs2hNbWaVROelDaAVHrtG9J5mm1Cg4qZkdnz-FUmN94EnBAKbkORquSjIFQEcw0JLEbLBJSIhAGBnsEWBTVB5zeZgLqxixZZwCuymVc5F8ivyYVkyDEucvY05b2HpKYOxF7SY3C0jHYMfFB-xfSjoP-21fOMl-cp0PnByswi5XVYfdzqIm-xd4Hxx3lGJg3QRckASGdd6VXIKt4IgTY-Icw5icKlA5_ONqjjAkvbGl9FdgPY4y_lz-C7pP-_poLork_ZDrdbNR3NpBNjTnrrzeLXK-VzMQT_RGN9rtbRBgUA-HxJ7X9jhsB_Tin_b0GoUqrdMIO2sJ8F_OAEE61XmpG2fnVm07rKFgp62HEanMg82C0t3VcNFtg2pZFSMO9SDv1GAsI5klz7dhtoIhmAByukEFkaY=w647-h439-no?authuser=0" alt="Žemėlapis">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Studentų g. 50, Kaunas&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <a href="https://2yu.co">2yu</a>
+                            <br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style>
+                            <a href="https://embedgooglemap.2yu.co/">html embed google map</a>
+                            <style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="kontaktai">
-            <div class="light20Text">
-                <p>Susisiekite su mumis:</p>
+            <div class="light16Text">
+                <p class="lightBold20Text">Susisiekite su mumis:</p>
                 <p>kodokepykla@gmail.com</p>
                 <p>+37065658564</p>
                 <div>
@@ -141,13 +143,21 @@ $all_products = $connection->query($sql);
                 </div>
                 <p>@ Kodo Kepykla 2023</p>
             </div>
-            <div class="light20Text">
-                <p>Mus rasite:</p>
+            <div class="light16Text">
+                <p class="lightBold20Text">Mus rasite:</p>
                 <p>Studentų g. 50,</p>
                 <p>Kaunas</p>
             </div>
         </div>
 
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <button class="close" onclick="closeDialog()">&times;</button>
+                <p class="dark16Text">Šią prekę gali įvertinti tik ją įsigiję klientai.</p>
+                <p class="dark16Text">Kviečiame užsisakyti šią prekę dabar!</p>
+            </div>
+        </div>
+        
         <script type="text/javascript" src="functions.js"></script>
         <script type="text/javascript" src="modalDialog.js"></script>
    </body>

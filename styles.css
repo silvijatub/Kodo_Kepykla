@@ -551,14 +551,6 @@ h2 {
     height: 300px;
 }
 
-.laukiameJusu {
-    background-color: #442419;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .laukiameJusu > p {
     margin: 50px 0px;
 }
