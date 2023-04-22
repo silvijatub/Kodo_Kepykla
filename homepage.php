@@ -11,6 +11,7 @@ $all_products = $connection->query($sql);
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
         <meta charset="UTF-8">
      </head>
@@ -24,6 +25,12 @@ $all_products = $connection->query($sql);
             <button onclick="location.href='meniu.php'" class="headerButton">MENIU</button>
             <button onclick="location.href='aboutus.html'" class="headerButton">APIE MUS</button>
             <button onclick="location.href=''" class="logoButton"><img class="logo" src="https://lh3.googleusercontent.com/8sperpVU0RndjYvu9XUULVmaswL-Gkw0RN_BADTMxpOayFjsFgVj0B2kQnbvXaAFZDw=w2400" alt="Logo"></button>
+            <div class="search-container">
+                <form class="search-form" action="searchResults.php" method="GET">
+                    <input class="search-input" type="text" placeholder="Ieškoti..." name="search">
+                    <button class="search-button" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
         </div>
 
         <div class="apie">
