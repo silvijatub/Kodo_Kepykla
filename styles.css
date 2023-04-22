@@ -872,7 +872,7 @@ form {
     background-color:#f3e0c1;
   }
 
-  @media(max-width:768px){
+  @media(max-width:1000px){
     .menu-bar{
         display:block;
     }
@@ -896,9 +896,15 @@ form {
         gap: 0;
         flex-direction: column;
         background-color: #bbbb5a;
-        width: 100%;
+        width: 300px;
         text-align: center;
         transition: 0.3s;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .headerButton{
+        width: 300px;
     }
 
     .nav-item{
