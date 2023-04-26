@@ -29,7 +29,7 @@ $all_products = $connection->query($sql);
             <div class="apieAprasymas">
                 <h1>KODO KEPYKLA</h1>
                 <p class="dark30Text">Esame kepykla jau nuo 2023 metų pradžios ir mūsų kepykloje „Kodo kepykla“ ne tik atgyja konditerijos menas, bet ir įgyja kitas, naujas spalvas – prancūziškąsias.</p>
-                <button class="primaryButton">DAUGIAU APIE MUS</button>
+                <button onclick="location.href='aboutus.php'" class="primaryButton">DAUGIAU APIE MUS</button>
             </div>
         </div>
 
