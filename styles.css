@@ -842,7 +842,7 @@ form {
     list-style: none;
   }
 
-  .navbar {
+  .navigationbar {
     height: 94px;
     justify-content: space-between;
     align-items: center;
@@ -864,8 +864,9 @@ form {
   }
 
   .menu-bar{
-    display: none;
+    margin-top: 35px;
     cursor: pointer;
+    vertical-align: middle;
   }
 
   .bar {
@@ -985,7 +986,7 @@ form {
     border-radius: 4px;
     box-sizing: border-box;
     padding: 6px;
-    margin-right: 8px;
+    margin: 0px 8px 0px 0px;
     border: none;
     font-size: 16px;
   }

@@ -19,7 +19,7 @@ $all_products = $connection->query($sql);
      </head>
 
      <body>
-        <?php include 'header.php'; ?>
+        <?php include 'repeatingElements/header.php'; ?>
 
         <div class="apie">
             <div class="apiePaveiksl">
@@ -77,48 +77,10 @@ $all_products = $connection->query($sql);
             </div>
         </div>
 
-        <div class="laukiameJusu">
-            <p class="light30Header">LAUKIAME JŪSŲ</p>
-            <div class="kepyklosInfo">
-                <div class="light20Text">
-                    <p class="pav">Kodo Kepykla</p>
-                    <p>Studentų g. 50,</p>
-                    <p>Kaunas</p>
-                    <p class="darboLaikas">Darbo laikas:</p>
-                    <p>I-V | 09:00 - 18:00</p>
-                    <p>VI-VII | 10:00 - 16:00</p>
-                </div>
-                <div class="zemelapis">
-                    <div class="mapouter">
-                        <div class="gmap_canvas">
-                            <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Studentų g. 50, Kaunas&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                            <a href="https://2yu.co">2yu</a>
-                            <br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style>
-                            <a href="https://embedgooglemap.2yu.co/">html embed google map</a>
-                            <style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php include 'repeatingElements/map.php'; ?>
 
-        <div class="kontaktai">
-            <div class="light16Text">
-                <p class="lightBold20Text">Susisiekite su mumis:</p>
-                <p>kodokepykla@gmail.com</p>
-                <p>+37065658564</p>
-                <div>
-                    <a href="https://www.facebook.com"><img class="socials" src="https://lh3.googleusercontent.com/LevHz4AOP4W_CeqKZvs8bX4hr79W_iYtyn_0D9doN7LmLvbhdUU0eP0iGnbLBT9Pe_I=w2400"></a>
-                    <a href="https://www.instagram.com"><img class="socials" src="https://lh4.googleusercontent.com/RIUGBPCHD63KkA8iWPLKbzXgXTH5Y86FBQggGL_ZyJpSWz5IvSahyFw8Wjttsepyr8Q=w2400"></a>
-                </div>
-                <p>@ Kodo Kepykla 2023</p>
-            </div>
-            <div class="light16Text">
-                <p class="lightBold20Text">Mus rasite:</p>
-                <p>Studentų g. 50,</p>
-                <p>Kaunas</p>
-            </div>
-        </div>
+        <?php include 'repeatingElements/footer.php'; ?>
+
         <script>
             const menubar = document.querySelector(".menu-bar");
             const navMenu = document.querySelector(".nav-menu");
