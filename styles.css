@@ -72,7 +72,7 @@ button:focus {
 
 .headerButton {
     background-color: transparent;
-    padding: 0px 16px;
+    padding: 0px 24px;
     height: 94px;
     font-size: 15px;
     float: right;
@@ -94,16 +94,18 @@ button:focus {
 }
 
 /* ----------------- HEADER ------------------ */
-.header{
+header {
     height: 94px;
     background-color: #bbbb5a;
-    overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 3;
-}
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
 .logo{
     float: left;
     height: 86px;
@@ -836,32 +838,17 @@ form {
 
   /*----- menu bar ------*/
 
-  header {
-    background-color: #bbbb5a;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 3;
-  }
-
   li {
     list-style: none;
   }
 
   .navbar {
     height: 94px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 24px;
+    padding: 0px 24px 0px 0px;
     position:static;
-  }
-
-  .nav-menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
+    margin-left: auto;
   }
 
   .nav-branding {
@@ -891,7 +878,11 @@ form {
     background-color:#f3e0c1;
   }
 
-  @media(max-width:1000px){
+  .nav-item{
+    float: left;
+  }
+
+  @media(max-width:1400px){
     .menu-bar{
         display:block;
     }
@@ -910,8 +901,8 @@ form {
 
     .nav-menu {
         position:fixed;
-        left: -100%;
-        top: 70px;
+        right: -100%;
+        top: 94px;
         gap: 0;
         flex-direction: column;
         background-color: #bbbb5a;
@@ -920,6 +911,7 @@ form {
         transition: 0.3s;
         padding: 0;
         list-style-type: none;
+        height: 100%;
     }
 
     .headerButton{
@@ -927,11 +919,11 @@ form {
     }
 
     .nav-item{
-        margin: 2px 0;
+        margin: 0px 0;
     }
 
     .nav-menu.active{
-        left: 0;
+        right: 0;
 
     }
   }
@@ -941,7 +933,7 @@ form {
 }
 .star-rating i {
     font-size: 16px;
-    color: #fdc284;
+    color: #f79221;
 }
 
 .modal {
@@ -983,17 +975,15 @@ form {
   }
 
   .search-container {
-    display: flex;
-    background-color: transparent;
-    width: 400px;
-    height: 94px;
-    font-size: 15px;
-    float: right;
+    margin-left: 48px;
+    height: 40px;
   }
 
  .search-input[type=text] {
-    height: 28px;
+    width: 200px;
+    height: 40px;
     border-radius: 4px;
+    box-sizing: border-box;
     padding: 6px;
     margin-right: 8px;
     border: none;
@@ -1001,7 +991,6 @@ form {
   }
   
 .search-button {
-    margin: auto;
     background: #FDC284;
     font-size: 17px;
     border: none;
@@ -1041,4 +1030,8 @@ form {
 
 .search-empty > p {
     margin: 40px 60px;
+}
+
+.active {
+    font-weight: 600;
 }
