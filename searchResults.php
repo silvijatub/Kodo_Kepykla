@@ -4,6 +4,9 @@ require_once 'connection.php';
 
 <!DOCTYPE html>
 <html lang="lt">
+    <title>Kodo kepykla</title>
+    <link rel="shortcut icon" type="image/png" href="images/Logo.png"/>
+    
    <head>
         <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">

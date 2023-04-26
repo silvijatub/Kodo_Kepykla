@@ -865,6 +865,7 @@ form {
 
   .menu-bar{
     margin-top: 35px;
+    display: none;
     cursor: pointer;
     vertical-align: middle;
   }

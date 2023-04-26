@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="lt">
+    <title>Kodo kepykla</title>
+    <link rel="shortcut icon" type="image/png" href="images/Logo.png"/>
 
     <style>
         input[type=text], select {

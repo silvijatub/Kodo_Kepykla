@@ -1,5 +1,5 @@
 <header>
-    <button onclick="location.href='homepage.php'" class="logoButton"><img class="logo" src="https://lh3.googleusercontent.com/8sperpVU0RndjYvu9XUULVmaswL-Gkw0RN_BADTMxpOayFjsFgVj0B2kQnbvXaAFZDw=w2400" alt="Logo"></button>
+    <button onclick="location.href='homepage.php'" class="logoButton"><img class="logo" src="images/Logo.png" alt="Logo"></button>
     <div class="search-container">
         <form class="search-form" action="searchResults.php" method="GET">
             <input class="search-input" type="text" placeholder="Ieškoti..." name="search">
