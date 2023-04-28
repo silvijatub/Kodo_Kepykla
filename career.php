@@ -1,10 +1,3 @@
-<?php
-require_once 'connection.php';
-
-$sql="SELECT * FROM gaminys ORDER BY vertinimo_suma / vertinimo_kiekis DESC";
-$all_products = $connection->query($sql);
-?>
-
 <!DOCTYPE html>
 <html lang="lt">
     <title>Kodo kepykla</title>
@@ -60,16 +53,14 @@ $all_products = $connection->query($sql);
 
         <div class="career-details">
             <p class="light30Header">DĖL DETALESNĖS INFORMACIJOS KREIPKITĖS</p>
-            <div>
-                <div class="row-career">
-                    <div class="column-career">
-                        <img src = "https://lh3.googleusercontent.com/GfP79BBYcuCPcuuTrjKCmdVdGG8ui3w9KQUAZDC6GZIk0VAY__OarrcExne8vyEUOR0=w2400">
-                        <p class="light20Text">+37065658565</p>
-                    </div>
-                    <div class="column-career">
-                        <img src = "https://lh4.googleusercontent.com/ucYCcFzA5EdWYpCYng8KyOMSI_8vf_gO7MDwkoQIHWDY_4ZXDCPR0qH3WtXq61BAOk0=w2400">
-                        <p class="light20Text">kodokepykla@gmail.com</p>
-                    </div>
+            <div class="career-images">
+                <div class="">
+                    <img src = "https://lh3.googleusercontent.com/GfP79BBYcuCPcuuTrjKCmdVdGG8ui3w9KQUAZDC6GZIk0VAY__OarrcExne8vyEUOR0=w2400">
+                    <p class="light20Text">+37065658565</p>
+                </div>
+                <div class="">
+                    <img src = "https://lh4.googleusercontent.com/ucYCcFzA5EdWYpCYng8KyOMSI_8vf_gO7MDwkoQIHWDY_4ZXDCPR0qH3WtXq61BAOk0=w2400">
+                    <p class="light20Text">kodokepykla@gmail.com</p>
                 </div>
             </div>
         </div>
