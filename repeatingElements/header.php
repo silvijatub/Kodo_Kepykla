@@ -15,7 +15,7 @@
                 <button onclick="location.href='meniu.php'" class="headerButton <?php if (basename($_SERVER['PHP_SELF']) == 'meniu.php') echo 'active'; ?>">MENIU</button>
             </li>
             <li class = nav-item>
-                <button class="headerButton">KARJERA</button>
+                <button onclick="location.href='career.php'" class="headerButton <?php if (basename($_SERVER['PHP_SELF']) == 'career.php') echo 'active'; ?>"> KARJERA</button>
             </li>
             <li class = nav-item>
                 <button onclick="location.href='privacy_policy.php'" class="headerButton <?php if (basename($_SERVER['PHP_SELF']) == 'privacy_policy.php') echo 'active'; ?>">PRIVATUMO POLITIKA</button>

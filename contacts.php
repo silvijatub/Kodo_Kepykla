@@ -30,7 +30,7 @@
             <div class="contacts dark25Text">
                 <img src = "https://lh3.googleusercontent.com/GfP79BBYcuCPcuuTrjKCmdVdGG8ui3w9KQUAZDC6GZIk0VAY__OarrcExne8vyEUOR0=w2400"><p>+37065658565</p>
                 <br>
-                <img src = "https://lh4.googleusercontent.com/ucYCcFzA5EdWYpCYng8KyOMSI_8vf_gO7MDwkoQIHWDY_4ZXDCPR0qH3WtXq61BAOk0=w2400"><p>kodokepykla.darbas@gmail.com</p>
+                <img src = "https://lh4.googleusercontent.com/ucYCcFzA5EdWYpCYng8KyOMSI_8vf_gO7MDwkoQIHWDY_4ZXDCPR0qH3WtXq61BAOk0=w2400"><p>kodokepykla@gmail.com</p>
             </div>
         </div>
 

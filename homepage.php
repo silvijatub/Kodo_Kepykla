@@ -37,6 +37,7 @@ $all_products = $connection->query($sql);
 
         <div class="mylimiausi">
             <p class="light30Header">PIRKĖJŲ MYLIMIAUSI</p>
+            <div>
             <div class="mylimiausiuNuotraukos">
             <?php
                 $count = 0;
