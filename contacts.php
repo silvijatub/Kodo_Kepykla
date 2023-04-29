@@ -4,6 +4,17 @@
     <link rel="shortcut icon" type="image/png" href="images/Logo.png"/>
 
     <style>
+        input[type=email], select {
+        width: 60%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: center;
+        border: 1px solid #442419;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-family: 'Inter';
+        }
+
         input[type=text], select {
         width: 60%;
         padding: 12px 20px;
@@ -12,6 +23,18 @@
         border: 1px solid #442419;
         border-radius: 4px;
         box-sizing: border-box;
+        font-family: 'Inter';
+        }
+
+        textarea {
+            width: 60%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: center;
+            border: 1px solid #442419;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: 'Inter';
         }
     </style>
     
@@ -22,6 +45,16 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles.css">
         <meta charset="UTF-8">
+
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script src="contacts.js"></script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("6x6bLdxfggGm4_tWo");
+        })();
+        </script>
    </head>
    <body ng-app="app" ng-controller="controller">
         <?php include 'repeatingElements/header.php'; ?>
@@ -63,35 +96,35 @@
         </div>
 
         <div class="susisiekimas black20Text">
-            <form action="mailto:kodokepykla@gmail.com" method="GET">
+
                 <div class="column-susisiekimas">
                     <label for="vardas">Vardas</label>
                     <br>
-                    <input type="text" id="vardas" required>
+                    <input type="text" id="vardas" placeholder="Jūsų vardas" required>
                 </div>
         
                 <div class="column-susisiekimas">
                     <label for="pav">Pavardė</label>
                     <br>
-                    <input type="text" id="pavardė" required>
+                    <input type="text" id="pavarde" placeholder="Jūsų pavardė" required>
                 </div>
                 
                 <div class="column-susisiekimas">
-                    <label for="mail">El. paštas</label>
+                    <label for="email">El. paštas</label>
                     <br>
-                    <input type="text" id="mail" required>
+                    <input type="email" id="email" placeholder="Jūsų elektroninis paštas" required>
                     <br>
                     <label for="message">Žinutė</label>
                     <br>
-                    <input class="message" type="text" id="message" required>
+                    <textarea id="message" rows="3" placeholder="Jūsų žinutė"></textarea>
                 </div>
     
-                <button type="submit" onclick="myscroll(meniu.id)" class="sendButton primaryButton">
+                <button type="submit" onclick="sendMail()" class="sendButton primaryButton">
                     <div>
                         <p>Siųsti</p>
                     </div>
                 </button>
-           </form>
+
         </div>
         <?php include 'repeatingElements/footer.php'; ?>
 
