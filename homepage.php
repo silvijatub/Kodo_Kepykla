@@ -54,27 +54,30 @@ $all_products = $connection->query($sql);
             ?>
             </div>
             <button onclick="location.href='meniu.php'" class="primaryButton">ŽIŪRĖTI VISUS PRODUKTUS</button>
+            <br>
+            <br>
+            </div>
         </div>
 
         <div class="aprasymai">
         <div class="oranzinisAprasymas">
                 <div>
-                    <h2>Lorem Ipsum</h2>
-                    <p class="light20Text">dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet </p>
+                    <h2 style="font-family: 'Inter'; font-size: 40px">KĄ SIŪLOME?</h2>
+                    <p class="light20Text">Kiekvienam iš savo klientų siūlome nepamirštamą patirtį neapsakomoje prancūziškų skonių jūroje.</p>
                 </div>
                 <img class="aprasymoimg" src="https://lh3.googleusercontent.com/4-if2dwav6dandec3J8y3SNpCGsSg78sZqR-udURvoKTL1aYO_F4kfX1T1c_4kIDGn8=w2400" alt="Aprašymo nuotrauka">
             </div>
             <div class="zaliasAprasymas">
                 <img class="aprasymoimg" src="https://lh6.googleusercontent.com/vye5XF4AFPWqthCaBpyvr9lKhUoqbE2QZW_RXuwrd_ftcuP0NirMWQoA0irkm_1-Y6k=w2400" alt="Aprašymo nuotrauka">
                 <div>
-                    <h2>Lorem Ipsum</h2>
-                    <p class="light20Text">dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet </p>
+                    <h2 style="font-family: 'Inter'; font-size: 40px">KODĖL VERTA RINKTIS MUS?</h2>
+                    <p class="light20Text">Kodo kepykloje dirba patys profesionaliausi, kruopščiausi ir nuoširdžiausi žmonės visoje Lietuvoje, kurie kuo puikiausiai išmano prancūziškos konditerijos subtilybes.</p>
                 </div>
             </div>
             <div class="oranzinisAprasymas">
                 <div>
-                    <h2>Lorem Ipsum</h2>
-                    <p class="light20Text">dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet dolor sit amet </p>
+                    <h2 style="font-family: 'Inter'; font-size: 40px">KO REIKĖTŲ TIKĖTIS?</h2>
+                    <p class="light20Text">Su šia kepykla nuolatos galima tikėtis šilto ir svetingo aptarnavimo, nepaprastai skanių desertų, gamintų su daug meilės.</p>
                 </div>
                 <img class="aprasymoimg" src="https://lh5.googleusercontent.com/WhWxT-AVjZfqSfsnNN7u0fhD0WKwhbth5HThsfPOHGYzsiJ3Hq0eRBuiut4nq7DV7zo=w2400" alt="Aprašymo nuotrauka">
             </div>

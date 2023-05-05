@@ -38,13 +38,13 @@
             <div class="zaliasAprasymas">
                 <img class="aprasymoimg" src="https://lh3.googleusercontent.com/drive-viewer/AFGJ81qeGhQkXLWtDpIJ6gWFVR6shMffru4sZLiYINVR19bGfmhqy_dkpxJohUM2CwsME-TYEJ1MK0cezszs383S3TRAtUaRhw=s2560" alt="Aprašymo nuotrauka">
                 <div>
-                    <h2>SIŪLOMOS PAREIGOS</h2>
+                    <h2 style="font-family: 'Inter'; font-size: 40px">SIŪLOMOS PAREIGOS</h2>
                     <p class="light20Text">Ieškome tokių pareigų, kaip: gamybos linijos operatoriaus, gaminių formuotojų rankomis, kepimo procesą prižiūrinčių darbuotojų bei formuotojų ir gaminių pakavimo procesu besirūpinančių darbuotojų. Dėl kitų pareigų taip pat galite kreiptis, tačiau negalime pažadėti, jog laisva vieta bus.</p>
                 </div>
             </div>
             <div class="oranzinisAprasymas">
                 <div>
-                    <h2>SIŪLOMOS DARBO SĄLYGOS</h2>
+                    <h2 style="font-family: 'Inter'; font-size: 40px">SIŪLOMOS DARBO SĄLYGOS</h2>
                     <p class="light20Text">Mūsų siūlomos darbo sąlygos yra: 8 valandų trukmės darbo diena 5 dienas per savaitę (norint, galima susitarti ir dėl 0.5 etato), uždarbis yra maždaug 1200-1500 € į rankas, darbas patalpoje, tačiau gražiu oru ir tinkamu metų laiku, gali tekti dirbti ir lauke.</p>
                 </div>
                 <img class="aprasymoimg" src="https://i.ibb.co/93bvmk4/Ultimate-Boston-City-Guide-Top-16-Things-to-See-Do-1.png">
