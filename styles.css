@@ -762,14 +762,24 @@ to {opacity: 1}
     margin-bottom: 60px;
 }
 
-form {
+/*form {
     width: 80%;
     text-align: center;
     margin: auto;
     display: flex;
     vertical-align: middle;
     flex-direction: column;
+  }*/
+
+.form1 {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    vertical-align: middle;
+    flex-direction: row;
   }
+
 
 .chooseNumberOfItems form {
     flex-direction: row;
