@@ -54,6 +54,7 @@ $all_products = $connection->query($sql);
                     $output = "Į krepšelį";
                     if ($amount == '0'){ $output = "Neturime";}
             ?>
+            
             <div class="meniuItemGrid">
                 <button class="secondaryButton ziuretiButton" <?php if ($amount == '0'){ ?> disabled <?php   } ?>>
                     <div>
@@ -61,8 +62,13 @@ $all_products = $connection->query($sql);
                         <p><?php echo $output ?></p>
                     </div>
                 </button>
+
+                
                 <div class="meniuItem" id="<?php echo $row["pavadinimas"]; ?>">
-                    <img src="<?php echo $row["foto_url"]; ?>" alt="<?php echo $row["pavadinimas"]; ?>">                    
+                
+                <a href="product_page.php?product=<?php echo $row["pavadinimas"]; ?>">
+                <img src="<?php echo $row["foto_url"]; ?>" alt="<?php echo $row["pavadinimas"]; ?>">  
+                </a>                    
                     <div> 
                         <p class="dark25Header" style="margin:0px;"><?php echo $row["pavadinimas"]; ?></p>
                         
@@ -91,7 +97,9 @@ $all_products = $connection->query($sql);
                         <p class="descriptionText"><?php echo $row["aprasymas"]; ?></p>
                     </div>
                  </div>
+                          
             </div>
+            
             <?php
                 }
             ?>

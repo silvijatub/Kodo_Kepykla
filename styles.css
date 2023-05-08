@@ -272,7 +272,7 @@ h2 {
 
 .meniuItem {
     width: 377px;
-    height: 516px;
+    /*height: 516px;*/
     background-color: #bbbb5a;
     position: relative;
     cursor: pointer;
@@ -287,14 +287,20 @@ h2 {
     margin: 12px 24px;
 }
 
+
 .meniuItem > img {
-    height: 377px;
-    width: 377px;
+    max-height: 377px;
+    max-width: 377px;
 }
 
 .kaina {
     margin: 4px 0px;
 }
+
+.linkToProduct {
+    display: block;
+   
+  }
 
 /*----------------- CONTACTS ------------------*/
 
@@ -763,6 +769,10 @@ form {
     display: flex;
     vertical-align: middle;
     flex-direction: column;
+  }
+
+.chooseNumberOfItems form {
+    flex-direction: row;
   }
 
 .value-button {
