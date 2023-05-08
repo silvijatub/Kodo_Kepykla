@@ -1,31 +1,41 @@
 <?php
 require_once 'connection.php';
+$stylesheet_url = "style.css";
 ?>
 
 <!DOCTYPE html>
 <html lang="lt">
     
-    <head>
+   <head>
         <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles.css">
-        <script src="https://kit.fontawesome.com/40aaa393d4.js" crossorigin="anonymous"></script>
         <meta charset="UTF-8">
+     
    </head>
    <body>
-
-    <?php include 'header.php'; ?>
-
-    <div class="productPage">
+        <?php include 'header.php'; ?>
+            <?php
+               $product = $_GET['product']; 
+               $sql = "SELECT * FROM gaminys WHERE (`pavadinimas` LIKE '$product')";
+               $result = $connection->query($sql);
+               
+               if (mysqli_num_rows($result) > 0) {
+                 // output data of each row
+                 while($row = mysqli_fetch_assoc($result)) {
+                   ?>
+                     <div class="productPage" id="<?php echo $row["pavadinimas"]; ?>">
         
-        <div class="dark30Text productDesript">
-            <h1 class="productName">PAIN AU CHOCOLAT</h1>
-            <p class="productPrice">1,99 eur. / 1 vnt.</p>
-            <p class="aboutProduct">Tai tobulas desertas bet kuriam paros metui. Šios bandelės pagamintos iš lengvų ir traškių tešlos sluoksnių, kurie užpildyti kokybišku šokoladu. Šio deserto kvapui ir tirpsmui burnoje neįmanoma atsispirti – tai tikra prancūziškų kepinių magija. Todėl kviečiame kiekvieną iš Jūsų palepinti save šia ypatinga, nepamirštama patirtimi kiekviename kąsnyje!</p>
+        <div class="dark30Text productDesript" >
+            <h1 class="productName"><?php echo $row["pavadinimas"]; ?></h1>
+            <p class="productPrice"><?php echo $row["kaina"]; ?> eur. / 1 vnt.</p>
+            <p class="aboutProduct"><?php echo $row["aprasymas"]; ?></p>
             
         
-            <form class="chooseNumberOfItems">
+            <form class="form1">
                 <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
                 <input type="number" id="number" value="1" />
                 <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
@@ -41,10 +51,16 @@ require_once 'connection.php';
 
 
         <div class="stickyImage">
-            <img class="productImage" src="https://i.ibb.co/QJ81289/pain-au-chocolate-2.png" alt="Kruasanai">
-        </div>
-       
+        <img class="productImage" src="<?php echo $row["foto_url"]; ?>" alt="<?php echo $row["pavadinimas"]; ?>"> 
+        </div>   
     </div>
+                   <?php
+                 }
+               } else {
+                   echo "0 results";
+               }
+        ?>
+
 
     <div class="productInfo">
         <div class="dark30Header">
@@ -64,6 +80,10 @@ require_once 'connection.php';
     </div>
 
        
+
+
+
+
         <div class="kontaktai">
         <div class="light16Text">
             <p class="lightBold20Text">Susisiekite su mumis:</p>
