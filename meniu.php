@@ -97,9 +97,9 @@ $all_products = $connection->query($sql);
                         <p class="descriptionText"><?php echo $row["aprasymas"]; ?></p>
                     </div>
                  </div>
-                          </a>  
+                         
             </div>
-            
+             </a>  
             <?php
                 }
             ?>
