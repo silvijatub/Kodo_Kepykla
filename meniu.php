@@ -55,7 +55,7 @@ $all_products = $connection->query($sql);
                     $output = "Į krepšelį";
                     if ($amount == '0'){ $output = "Neturime";}
             ?>
-            <a class = "linkToProduct" href="product_page.php?product=<?php echo $row["pavadinimas"]; ?> " method="GET" > 
+        
             <div class="meniuItemGrid">
                 <button class="secondaryButton ziuretiButton" <?php if ($amount == '0'){ ?> disabled <?php   } ?>>
                     <div>
@@ -67,7 +67,7 @@ $all_products = $connection->query($sql);
                 
                 <div class="meniuItem" id="<?php echo $row["pavadinimas"]; ?>">
                 
-                <img src="<?php echo $row["foto_url"]; ?>" alt="<?php echo $row["pavadinimas"]; ?>">  
+                <img src="<?php echo $row["foto_url"]; ?>" alt="<?php echo $row["pavadinimas"]; ?>" onclick="location.href='product_page.php=<?php echo $row['pavadinimas']; ?>'" method="GET">  
                                   
                     <div> 
                         <p class="dark25Header" style="margin:0px;"><?php echo $row["pavadinimas"]; ?></p>
@@ -99,7 +99,7 @@ $all_products = $connection->query($sql);
                  </div>
                          
             </div>
-             </a>  
+            
             <?php
                 }
             ?>
