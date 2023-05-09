@@ -17,7 +17,7 @@ require_once 'connection.php';
      
    </head>
    <body>
-        <?php include 'header.php'; ?>
+        <?php include 'repeatingElements/header.php'; ?>
             <?php
                $product = $_GET['product']; 
                $sql = "SELECT * FROM gaminys WHERE (`pavadinimas` LIKE '$product')";

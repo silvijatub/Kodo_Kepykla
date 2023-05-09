@@ -1137,3 +1137,9 @@ form {
 .active {
     font-weight: 600;
 }
+
+.form1 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }

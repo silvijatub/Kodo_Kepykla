@@ -44,7 +44,7 @@ require_once 'connection.php';
                         <p><?php echo $output ?></p>
                     </div>
                 </button>
-                <div class="meniuItem" id="<?php echo $row["pavadinimas"]; ?>">
+                <div class="meniuItem" id="<?php echo $row["pavadinimas"]; ?>"  onclick="location.href='product_page.php?product=<?php echo urlencode($row['pavadinimas']); ?>'">
                     <img src="<?php echo $row["foto_url"]; ?>" alt="<?php echo $row["pavadinimas"]; ?>">                    
                     <div> 
                         <p class="dark25Header" style="margin:0px;"><?php echo $row["pavadinimas"]; ?></p>
