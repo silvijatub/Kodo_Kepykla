@@ -37,7 +37,7 @@ require_once 'connection.php';
         <div class="dark30Text productDesript" >
             <h1 class="productName"><?php echo $row["pavadinimas"]; ?></h1>
             <p class="productPrice"><?php echo $row["kaina"]; ?> eur. / 1 vnt.</p>
-            <p class="aboutProduct"><?php echo $row["aprasymas"]; ?></p>
+            <p class="aboutProduct" style="font-size: 20px"><?php echo $row["aprasymas"]; ?></p>
             
            
            
@@ -64,12 +64,12 @@ require_once 'connection.php';
     </div>
 
     <div class="productInfo">
-        <div class="dark30Header">
-            <p>KEPINIO SUDĖTIS</p>
+        <!--<div class="dark30Header">
+            <p class="font-size: 30px">KEPINIO SUDĖTIS</p>
         </div>       
         <div class="dark30Text papildInfo2">
             <p><?php echo $row["sudetis"]; ?></p>
-        </div>
+        </div>-->
     </div>
 
     <script>
