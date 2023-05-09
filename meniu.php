@@ -65,7 +65,7 @@ $all_products = $connection->query($sql);
                     </div>
                 </button>
                 <div class="meniuItem" id="<?php echo $row["pavadinimas"]; ?>">
-                    <img src="<?php echo $row["foto_url"]; ?>" alt="<?php echo $row["pavadinimas"]; ?>">                    
+                    <img src="<?php echo $row["foto_url"]; ?>" alt="<?php echo $row["pavadinimas"]; ?>" onclick="location.href='product_page.php=<?php echo $row['pavadinimas']; ?>'" method="GET">                    
                     <div> 
                         <p class="dark25Header" style="margin:0px;"><?php echo $row["pavadinimas"]; ?></p>
                         
