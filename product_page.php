@@ -31,12 +31,13 @@ require_once 'connection.php';
                     $output = "Į krepšelį";
                     if ($amount == '0'){ $output = "Neturime";}
                    ?>
-                   
-
                      <div class="productPage" id="<?php echo $row["pavadinimas"]; ?>">
+
+        <div id="responsiveProd">
         
-        <div class="dark30Text productDesript" >
+        <div class="dark30Text productDesript" id="productInf">
             
+        <div id = "prodMainInfo">
               <h1 class="productName" style="margin-bottom:0px" ><?php echo $row["pavadinimas"]; ?></h1>
 
              <div class="star-rating" style="margin-bottom:20px">
@@ -60,14 +61,16 @@ require_once 'connection.php';
                             </ul>
                         </div>
             <p class="productPrice"><?php echo $row["kaina"]; ?> eur. / 1 vnt.</p>
-            <p class="aboutProduct" style="font-size: 20px"><?php echo $row["aprasymas"]; ?></p>
+                            </div>
+
+            <div id="prodAprasymas"> <p class="aboutProduct" style="font-size: 20px"><?php echo $row["aprasymas"]; ?></p></div>
             
            
-           
-            <form class="form1"  style="width:100%">
-                <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value" style="height:60px">-</div>
+           <div id="prodKreps">
+            <form class="form1">
+                <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value" >-</div>
                 <input type="number" id="number" value="0"/>
-                <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"style="height:60px">+</div>
+                <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
               </form>
 
               <button class="secondaryButton ziuretiButton" <?php if ($amount == '0'){ ?> disabled <?php   } ?> style="margin-top: 50px">
@@ -76,16 +79,17 @@ require_once 'connection.php';
                         <p><?php echo $output ?></p>
                     </div>
                 </button>
-
- 
         </div>
         
+                            </div>
 
-        <div class="stickyImage">
+                            <div id="prodImage">
         <img class="productImage" src="<?php echo $row["foto_url"]; ?>" alt="<?php echo $row["pavadinimas"]; ?>"> 
-        </div>   
+        </div>
     </div>
-
+                            
+</div>
+       
     <div class="productInfo">
         <!--<div class="dark30Header">
             <p class="font-size: 30px">KEPINIO SUDĖTIS</p>
