@@ -139,7 +139,16 @@ require_once 'connection.php';
         <script type="text/javascript" src="items.js"></script>
         <script type="text/javascript" src="modalDialog.js"></script>
 
-   
+        <script type="text/javascript" src="functions.js"></script>
+        <script>
+            const menubar = document.querySelector(".menu-bar");
+            const navMenu = document.querySelector(".nav-menu");
+
+            menubar.addEventListener("click", () => {
+                menubar.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            })
+        </script>
    
    </body>
 </html>
