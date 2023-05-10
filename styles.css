@@ -1371,3 +1371,76 @@ form {
     align-items: center;
     margin-left: 0px;
   }
+
+ /* RESPONSIVE MAP */
+
+  .adress{
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 700px){
+    .kepyklosInfo {
+        display: flex;
+        flex-direction: column;
+    }
+    .zemelapis{
+        height: 250px;
+    }
+  }
+
+
+  /* RESPONSIVE HOMEPAGE */
+
+  
+  @media (max-width: 700px){
+    .apie {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .apiePaveiksl > div { 
+        width: 300px;
+        height: 300px;   
+        margin-left: 200px;
+        padding-top: 100px;
+    }
+    .apiePaveiksl{
+        margin-top: 20px;
+        margin-left: 60px;
+        padding-top: 100px;
+    }
+
+    .apieAprasymas{
+        margin-top:20px;
+    }
+
+    .oranzinisAprasymas {
+        display: flex;
+        flex-direction: column;
+        width:300px;
+        height: 100%;
+    }
+
+    .oranzDiv{
+        padding-top: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .zaliasAprasymas {
+        display: flex;
+        flex-direction: column;
+        width:300px;
+        height: 100%;
+    }
+
+    .zalDiv{
+        padding-top: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+   
+  }
+
+
