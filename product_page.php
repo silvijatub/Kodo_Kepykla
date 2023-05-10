@@ -7,6 +7,7 @@ require_once 'connection.php';
 <html lang="lt">
     
    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet"> 
@@ -35,13 +36,35 @@ require_once 'connection.php';
                      <div class="productPage" id="<?php echo $row["pavadinimas"]; ?>">
         
         <div class="dark30Text productDesript" >
-            <h1 class="productName"><?php echo $row["pavadinimas"]; ?></h1>
+            
+              <h1 class="productName" style="margin-bottom:0px" ><?php echo $row["pavadinimas"]; ?></h1>
+
+             <div class="star-rating" style="margin-bottom:20px">
+                            <ul class="list-inline" style="margin:0px">
+                            <?php 
+                                if ($row['vertinimo_kiekis'] == '0') {$stars = 0;}
+                                else { $stars = round($row['vertinimo_suma']/$row['vertinimo_kiekis']);}
+                                for ($star = 0; $star < $stars; $star++) {
+                                    ?>
+                                        <li class="list-inline-item"><i class="fa fa-star" onclick="dialog()" style="cursor:pointer"></i></li>
+                                        <?php
+                                }
+                                for ($star = 0; $star < 5- $stars; $star++) {
+                                    ?>
+                                        <li class="list-inline-item"><i class="fa fa-star-o" onclick="dialog()" style="cursor:pointer"></i></li>
+                                        <?php
+                                }?>
+                                    <li class="list-inline-item dark16Text">(<?php echo $row['vertinimo_kiekis']; ?>)</li>
+                                <?php
+                            ?>                
+                            </ul>
+                        </div>
             <p class="productPrice"><?php echo $row["kaina"]; ?> eur. / 1 vnt.</p>
             <p class="aboutProduct" style="font-size: 20px"><?php echo $row["aprasymas"]; ?></p>
             
            
            
-            <form class="form1" style="margin-left: 0px">
+            <form class="form1"  style="width:100%">
                 <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value" style="height:60px">-</div>
                 <input type="number" id="number" value="0"/>
                 <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"style="height:60px">+</div>
@@ -101,36 +124,22 @@ require_once 'connection.php';
                }
         ?>
 
+ <?php include 'repeatingElements/footer.php'; ?>
 
-  
-
-       
-
-
-
-
-        <div class="kontaktai">
-        <div class="light16Text">
-            <p class="lightBold20Text">Susisiekite su mumis:</p>
-            <p>kodokepykla@gmail.com</p>
-            <p>+37065658564</p>
-            <div>
-                <a href="https://www.facebook.com"><img class="socials" src="https://lh3.googleusercontent.com/LevHz4AOP4W_CeqKZvs8bX4hr79W_iYtyn_0D9doN7LmLvbhdUU0eP0iGnbLBT9Pe_I=w2400"></a>
-                <a href="https://www.instagram.com"><img class="socials" src="https://lh4.googleusercontent.com/RIUGBPCHD63KkA8iWPLKbzXgXTH5Y86FBQggGL_ZyJpSWz5IvSahyFw8Wjttsepyr8Q=w2400"></a>
+    <div id="myModal" class="modal">
+            <div class="modal-content">
+                <button class="close" onclick="closeDialog()">&times;</button>
+                <p class="dark16Text">Šią prekę gali įvertinti tik ją įsigiję klientai.</p>
+                <p class="dark16Text">Kviečiame užsisakyti šią prekę dabar!</p>
             </div>
-            <p>@ Kodo Kepykla 2023</p>
         </div>
-        <div class="light16Text">
-            <p class="lightBold20Text">Mus rasite:</p>
-            <p>Studentų g. 50,</p>
-            <p>Kaunas</p>
-        </div>
-    </div>
-       
+
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
         <script type="text/javascript" src="functions.js"></script>
         <script type="text/javascript" src="items.js"></script>
+        <script type="text/javascript" src="modalDialog.js"></script>
 
+   
    
    </body>
 </html>

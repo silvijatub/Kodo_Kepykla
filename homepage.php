@@ -47,7 +47,7 @@ $all_products = $connection->query($sql);
                         $pavadinimas=$row["pavadinimas"];
             ?>
                 <button>
-                    <img src="<?php echo $row["foto_url"]; ?>" alt="<?php echo $row["pavadinimas"]; ?>" onclick="location.href='meniu.php#<?php echo $row['pavadinimas']; ?>'">
+                    <img src="<?php echo $row["foto_url"]; ?>" alt="<?php echo $row["pavadinimas"]; ?>" onclick="location.href='product_page.php?product=<?php echo urlencode($row['pavadinimas']); ?>'">
                 </button>
             <?php
                     }}
