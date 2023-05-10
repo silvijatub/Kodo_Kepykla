@@ -7,6 +7,7 @@ require_once 'connection.php';
 <html lang="lt">
     
    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet"> 
@@ -63,7 +64,7 @@ require_once 'connection.php';
             
            
            
-            <form class="form1" style="margin-left: 0px">
+            <form class="form1"  style="width:100%">
                 <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value" style="height:60px">-</div>
                 <input type="number" id="number" value="0"/>
                 <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"style="height:60px">+</div>
