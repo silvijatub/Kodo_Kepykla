@@ -36,7 +36,9 @@ require_once 'connection.php';
         
         <div class="dark30Text productDesript" >
             
-              <div class="star-rating">
+              <h1 class="productName" style="margin-bottom:0px" ><?php echo $row["pavadinimas"]; ?></h1>
+
+             <div class="star-rating" style="margin-bottom:20px">
                             <ul class="list-inline" style="margin:0px">
                             <?php 
                                 if ($row['vertinimo_kiekis'] == '0') {$stars = 0;}
@@ -56,8 +58,6 @@ require_once 'connection.php';
                             ?>                
                             </ul>
                         </div>
-            
-            <h1 class="productName"><?php echo $row["pavadinimas"]; ?></h1>
             <p class="productPrice"><?php echo $row["kaina"]; ?> eur. / 1 vnt.</p>
             <p class="aboutProduct" style="font-size: 20px"><?php echo $row["aprasymas"]; ?></p>
             
