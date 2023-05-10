@@ -35,6 +35,28 @@ require_once 'connection.php';
                      <div class="productPage" id="<?php echo $row["pavadinimas"]; ?>">
         
         <div class="dark30Text productDesript" >
+            
+              <div class="star-rating">
+                            <ul class="list-inline" style="margin:0px">
+                            <?php 
+                                if ($row['vertinimo_kiekis'] == '0') {$stars = 0;}
+                                else { $stars = round($row['vertinimo_suma']/$row['vertinimo_kiekis']);}
+                                for ($star = 0; $star < $stars; $star++) {
+                                    ?>
+                                        <li class="list-inline-item"><i class="fa fa-star" onclick="dialog()" style="cursor:pointer"></i></li>
+                                        <?php
+                                }
+                                for ($star = 0; $star < 5- $stars; $star++) {
+                                    ?>
+                                        <li class="list-inline-item"><i class="fa fa-star-o" onclick="dialog()" style="cursor:pointer"></i></li>
+                                        <?php
+                                }?>
+                                    <li class="list-inline-item dark16Text">(<?php echo $row['vertinimo_kiekis']; ?>)</li>
+                                <?php
+                            ?>                
+                            </ul>
+                        </div>
+            
             <h1 class="productName"><?php echo $row["pavadinimas"]; ?></h1>
             <p class="productPrice"><?php echo $row["kaina"]; ?> eur. / 1 vnt.</p>
             <p class="aboutProduct" style="font-size: 20px"><?php echo $row["aprasymas"]; ?></p>
