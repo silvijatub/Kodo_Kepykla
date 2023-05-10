@@ -25,7 +25,7 @@
         <meta charset="UTF-8">
    </head>
 
-   <body class="aboutUsBody" ng-app="app" ng-controller="controller">
+   <body>
         <?php include 'repeatingElements/header.php'; ?>
 
         <div class="meniuIntro">
