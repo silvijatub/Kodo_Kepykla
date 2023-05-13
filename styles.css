@@ -297,6 +297,19 @@ h2 {
 
 /*---------------- CAREER -------------------*/
 
+.ko {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #442419;
+}
+
+.ko > p {
+    margin-top: 25px;
+}
+
 .kepyklaImage > div {
     position: absolute;
     width: 555px;
@@ -317,7 +330,7 @@ h2 {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.careerAprasymas > h1 {
+.careerAprasymas > div > h1 {
     position: absolute;
     width: 673px;
     height: 148px;
@@ -332,7 +345,7 @@ h2 {
     color: #F79221;
 }
 
-.careerAprasymas > p {
+.careerAprasymas > div > p {
     position: absolute;
     width: 623px;
     height: 244px;
@@ -1065,6 +1078,7 @@ form {
         .oranzinisAprasymas {
             display: flex;
             flex-direction: row;
+            margin: 40px 0px;
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
         }
         
@@ -1080,24 +1094,25 @@ form {
             justify-content: center;
             flex-direction: column;
             text-align: left;
-            margin: auto 10px auto 30px;
+            margin: auto 0px auto 15px;
             padding: 0px;
         }
 
         .oranzinisAprasymas > div > p {
-            font-size: 15px;
+            font-size: 12px;
         }
 
         .oranzinisAprasymas > div > h2 {
-            font-size: 18px;
+            margin-top: 30px;
+            font-size: 20px;
         }
 
         .zaliasAprasymas > div > p {
-            font-size: 15px;
+            font-size: 12px;
         }
 
         .zaliasAprasymas > div > h2 {
-            font-size: 18px;
+            font-size: 20px;
         }
 
         .zaliasAprasymas > div {
@@ -1105,7 +1120,7 @@ form {
             justify-content: center;
             flex-direction: column;
             text-align: right;
-            margin: auto 30px auto 10px;
+            margin: auto 15px auto 5px;
             padding: 0px;
         }
         
@@ -1208,6 +1223,132 @@ form {
         @keyframes fade {
         from {opacity: .1} 
         to {opacity: 1}
+        }
+
+        /*-----career------*/
+
+        .aprasymai{
+            width: 800px;
+        }
+
+        .aprasymai > .zaliasAprasymas {
+            width: 80%;
+        }
+
+        .aprasymai > .oranzinisAprasymas {
+            width: 80%;
+        }
+
+        .zaliasAprasymas > h2 {
+            font-size: 20px;
+        }
+
+        .ko {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            background-color: #442419;
+            height: 500px;
+        }
+        
+        .ko > p {
+            margin-top: -75px;
+            font-size: 24px;
+        }
+
+        .kepyklaImage > div {
+            position: absolute;
+            width: 35%;
+            height: 30%;
+            left: 420px;
+            top: 250px;
+            background: #FDC284;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        
+        .kepyklaImage > img {
+            position: absolute;
+            width: 35%;
+            height: 30%;
+            left: 440px;
+            top: 292px;
+            z-index: 1;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+        
+        .careerAprasymas > div > h1 {
+            width: 40%;
+            height: 148px;
+            left: 48px;
+            top: 150px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 48px;
+            text-align: center;
+            color: #F79221;
+        }
+        
+        .careerAprasymas > div > p {
+            width: 40%;
+            height: auto;
+            left: 50px;
+            top: 320px;
+            font-weight: 400;
+            font-size: 18px;
+            color: #442419;
+        }
+        
+        .career {
+            margin-top: 94px;
+            display: flex;
+            width: 800px;
+        }
+        
+        .careerAprasymas {
+            flex-direction: column;
+            text-align: left;
+            margin: 150px 150px 150px 0px;
+            height: 450px;
+        }
+        .koIeskome {
+            width: 85%;
+            font-weight: 400;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+        
+        .greenCircle {
+            position: absolute;
+            width: 237px;
+            height: 237px;
+            left: 286px;
+            top: 3153px;
+            background: #BBBB5A;
+        }
+        
+        .career-details {
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            background-color: #442419;
+        }
+        
+        .career-images{
+            padding-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 5%;
+        }
+        
+        .career-images > div > img {
+            margin-bottom: 10px;
         }
     }
 

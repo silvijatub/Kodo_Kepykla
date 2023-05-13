@@ -18,8 +18,10 @@
 
         <div class="career">
             <div class="careerAprasymas">
-                <h1>KVIEČIAME PRISIJUNGTI PRIE MŪSŲ KOMANDOS!</h1>
-                <p>Mūsų įmonė nuolat susilaukia vis daugiau ir daugiau populiarumo ir ne tik valstybinio, bet ir tarptautinio pripažinimo, todėl ieškome žmonių, kurie galėtų prisijungti prie mūsų šeimos – kolektyvo. Tad kviečiame visus išbandyti savo jėgas mūsų kepykloje!</p>
+                <div>
+                    <h1>KVIEČIAME PRISIJUNGTI PRIE MŪSŲ KOMANDOS!</h1>
+                    <p>Mūsų įmonė nuolat susilaukia vis daugiau ir daugiau populiarumo ir ne tik valstybinio, bet ir tarptautinio pripažinimo, todėl ieškome žmonių, kurie galėtų prisijungti prie mūsų šeimos – kolektyvo. Tad kviečiame visus išbandyti savo jėgas mūsų kepykloje!</p>
+                </div>
             </div>
             <div class="kepyklaImage">
                 <img src="https://lh3.googleusercontent.com/drive-viewer/AFGJ81rlQ0hwWuFco7WpqFOFvdYHT4YHvfR-8pDJmwDC90rXt9K7ZA_dN773WjJ4Q_FCUXufbIFvIA9bYfHFFQrjl8P-2vG3ww=s2560" alt="kepykla">
@@ -27,7 +29,7 @@
             </div>
         </div>
 
-        <div class="mylimiausi">
+        <div class="ko">
             <p class="light30Header">KO MES IEŠKOME?</p>
             <div class="koIeskome">
                 Mūsų komanda ieško ne tik maistą, bet ir jo gaminimą mylinčių žmonių, kurie yra pasirengę įdėti daug darbo tam, kad ne tik įsilietų į mūsų darnią, draugišką bei energingą šeimą, tačiau ir taptų neatsiejama jos dalimi. Darbas kepykloje apima ne tik gaminimą, bet ir bendravimą su klientais, tvarkymą ir kitus kepyklos reikalus, todėl mes ieškome darbuotojų, turinčių aukštą atsakomybės jausmą ir gebančių efektyviai bendrauti su kitais kolegomis. Taip pat mes ieškome tokių darbuotojų, kurie turi patirties ir žinių apie konditerijos gamybą, yra itin kūrybingi ir pasiruošę siūlyti naujus ir įdomius kepinius, energingi ir itin motyvuoti. Tad, jei mes kalbame apie Jus, kviečiame prisijungti prie mūsų kolektyvo!
@@ -38,13 +40,13 @@
             <div class="zaliasAprasymas">
                 <img class="aprasymoimg" src="https://lh3.googleusercontent.com/drive-viewer/AFGJ81qeGhQkXLWtDpIJ6gWFVR6shMffru4sZLiYINVR19bGfmhqy_dkpxJohUM2CwsME-TYEJ1MK0cezszs383S3TRAtUaRhw=s2560" alt="Aprašymo nuotrauka">
                 <div>
-                    <h2 style="font-family: 'Inter'; font-size: 40px">SIŪLOMOS PAREIGOS</h2>
+                    <h2 style="font-family: 'Inter';">SIŪLOMOS PAREIGOS</h2>
                     <p class="light20Text">Ieškome tokių pareigų, kaip: gamybos linijos operatoriaus, gaminių formuotojų rankomis, kepimo procesą prižiūrinčių darbuotojų bei formuotojų ir gaminių pakavimo procesu besirūpinančių darbuotojų. Dėl kitų pareigų taip pat galite kreiptis, tačiau negalime pažadėti, jog laisva vieta bus.</p>
                 </div>
             </div>
             <div class="oranzinisAprasymas">
                 <div>
-                    <h2 style="font-family: 'Inter'; font-size: 40px">SIŪLOMOS DARBO SĄLYGOS</h2>
+                    <h2 style="font-family: 'Inter';">SIŪLOMOS DARBO SĄLYGOS</h2>
                     <p class="light20Text">Mūsų siūlomos darbo sąlygos yra: 8 valandų trukmės darbo diena 5 dienas per savaitę (norint, galima susitarti ir dėl 0.5 etato), uždarbis yra maždaug 1200-1500 € į rankas, darbas patalpoje, tačiau gražiu oru ir tinkamu metų laiku, gali tekti dirbti ir lauke.</p>
                 </div>
                 <img class="aprasymoimg" src="https://i.ibb.co/93bvmk4/Ultimate-Boston-City-Guide-Top-16-Things-to-See-Do-1.png">
