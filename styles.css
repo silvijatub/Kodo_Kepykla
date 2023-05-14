@@ -1618,6 +1618,10 @@ form {
      .meniu2 > h1{
         font-size: 30px;
      }
+
+     .meniuIntro > div {
+        padding: 0;
+     }
   }
 
   .shoppingCartGrid{
