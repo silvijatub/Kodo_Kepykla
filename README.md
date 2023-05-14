@@ -82,6 +82,16 @@ Taip pat nėra paminėta, tačiau į paieškos lauką įvedus kažkokį žodį, 
 
 Nr. | Testavimo atvejis | Tikėtinas rezultatas | Realus rezultatas 
 --- | --- | --- | --- |
+1 | "Daugiau apie mus" mygtukas | Atidaromas "Apie mus puslapis"; meniu punktas "Apie mus" paryškintas | Atititinka tikėtiną
+2 | Logotipo mygtukas | Iš kiekvieno puslapio grįžtama į pagrindinį | Atititinka tikėtiną
+3 | "Pirkėjų mylimiausi" mygtukai | Kiekvienas iš 5 mygtukų veda į meniu puslapį ir iki atitinkamo produkto aprašymo | Atititinka tikėtiną
+4 | "Žiūrėti visus produktus" mygtukas | Atidaro meniu puslapį, meniu punktas paryškintas | Atititinka tikėtiną
+5 | Socialinių tinklų mygtukai | Mygtukai atitinkamai atidaro nuorodas į "Instagram" ir "Facebook" tinklalapius | Atititinka tikėtiną
+6 | Paieška ieškant frazės "tokioproduktonera" | Rodomas pranešimas, kad produktų nerasta | Atititinka tikėtiną
+7 | Paieška ieškant frazės "pranc" | Rodomi 6 surasti produktai | Atititinka tikėtiną
+8 | Kruasano produkto nuotrauka | Paspaudus atidaromas puslapis su detalesne informacija apie kruasanus | Atititinka tikėtiną
+9 | Produkto kiekio pasirinkimo mygtukai (produktų skaičių bandoma sumažinti iki neigiamo) | Neleidžiama rinktis mažesnio nei 0 produkto kiekio | Atititinka tikėtiną
+10 | Produkto kiekio pasirinkimo mygtukai (tikrinamas + ir - funkcionalumas) | Paspaudus mygtukus prekės kiekis padidėja/sumažėja vienetu | Atititinka tikėtiną
 
 ## Naudotojo dokumentacija
 
