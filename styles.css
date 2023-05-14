@@ -1588,10 +1588,36 @@ form {
         margin-bottom: 20px;
     }
 
-    .meniuIntro > h1{
-        size: 20px;
+ 
+     
+  }
+
+  @media (max-width: 900px){
+    .meniuIntro{
+        display: flex;
+        flex-direction:column-reverse;
     }
+
+    .meniuIntro {
+        margin-top: 94px;
+        display: flex;
+     }
+
+     .meniuIntro > button{
+        margin-bottom: 40px;
+     }
    
+     .meniu2{
+        align-items: center;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+     }
+    
+     .meniu2 > h1{
+        font-size: 30px;
+     }
   }
 
   .shoppingCartGrid{
