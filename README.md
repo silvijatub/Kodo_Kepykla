@@ -37,5 +37,6 @@ Komandos projekto idėja – internetinė svetainė, kuri skirta naujai įsikūr
 3. Gan lengvai suprantama naudotojui.
 4. Spalvos, nerėžiančios akies.
 5. Naudojamos kelios tos pačios spalvos:
+
 ![image](https://github.com/silvijatub/Kodo_Kepykla/assets/91486697/d97dc9b8-8bb8-4fd3-ad79-51865025df94)
 
