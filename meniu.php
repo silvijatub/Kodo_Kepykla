@@ -23,7 +23,7 @@ $all_products = $connection->query($sql);
         <?php include 'repeatingElements/header.php'; ?>
 
         <div class="meniuIntro">
-            <div>
+            <div class="meniu2">
                 <h1>IŠSIRINKITE TOBULUS KEPINIUS IŠ PLATAUS MŪSŲ ASORTIMENTO!</h1>
                 <button onclick="myscroll(meniu.id)" class="primaryButton">
                     <div>
