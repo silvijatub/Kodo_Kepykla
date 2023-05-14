@@ -304,6 +304,7 @@ h2 {
     flex-direction: column;
     text-align: center;
     background-color: #442419;
+    height: 100%;
 }
 
 .ko > p {
@@ -370,7 +371,7 @@ h2 {
 }
 .koIeskome {
     width: 80%;
-    height: 300px;
+    height: 100%;
     left: 270px;
     top: 869px;
     font-weight: 400;
@@ -1250,11 +1251,12 @@ form {
             flex-direction: column;
             text-align: center;
             background-color: #442419;
-            height: 500px;
+            
+            height: 100%;
         }
         
         .ko > p {
-            margin-top: -75px;
+           /* margin-top: -75px;*/
             font-size: 24px;
         }
 
@@ -1319,6 +1321,7 @@ form {
             font-weight: 400;
             font-size: 16px;
             color: #FFFFFF;
+            height: 100%;
         }
         
         .greenCircle {
@@ -1644,4 +1647,14 @@ form {
   .layer1, .layer2{
     grid-column: 1;
     grid-row: 1;
+  }
+
+  @media (max-width: 600px){
+    .careerAprasymas > div > h1 {
+        width: 60%;
+    }
+    
+    .careerAprasymas > div > p {
+        width: 60%;
+    }
   }
