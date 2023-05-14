@@ -25,7 +25,7 @@
             </li>
             <li class = nav-item>
                 <div>
-                    <button class="headerBasket headerButton"><img src="images/shopping_cart.png" alt="Krepšelis" style="height: 24px"></button>
+                    <button onclick="location.href='shoppingcart.php'" class="headerBasket headerButton"><img src="images/shopping_cart.png" alt="Krepšelis" style="height: 24px"></button>
                 </div>
             </li>
         </ul>
