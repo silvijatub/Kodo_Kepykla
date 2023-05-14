@@ -415,7 +415,7 @@ h2 {
     margin-top: 94px;
     height: 80vh;
     width: 100%;
-    background-image: url(https://lh6.googleusercontent.com/HxpkLz-3y_tcpbmve3R6gWK3xJ13WrC9GHfHo_W2BQxeSRdVwaIyfh7yLgL791npYkI=w2400);
+    background-image: url(images/bakery_aboutus.png);
     background-position: center;
     background-size: cover;
     text-align: left;
@@ -1091,7 +1091,7 @@ form {
 
         .oranzinisAprasymas > div {
             display: flex;
-            justify-content: center;
+            justify-content: right;
             flex-direction: column;
             text-align: left;
             margin: auto 0px auto 15px;

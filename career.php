@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="kepyklaImage">
-                <img src="https://lh3.googleusercontent.com/drive-viewer/AFGJ81rlQ0hwWuFco7WpqFOFvdYHT4YHvfR-8pDJmwDC90rXt9K7ZA_dN773WjJ4Q_FCUXufbIFvIA9bYfHFFQrjl8P-2vG3ww=s2560" alt="kepykla">
+                <img src="images/career.png" alt="kepykla">
                 <div></div>
             </div>
         </div>
@@ -38,7 +38,7 @@
 
         <div class="aprasymai">
             <div class="zaliasAprasymas">
-                <img class="aprasymoimg" src="https://lh3.googleusercontent.com/drive-viewer/AFGJ81qeGhQkXLWtDpIJ6gWFVR6shMffru4sZLiYINVR19bGfmhqy_dkpxJohUM2CwsME-TYEJ1MK0cezszs383S3TRAtUaRhw=s2560" alt="Aprašymo nuotrauka">
+                <img class="aprasymoimg" src="images/Eclair.png" alt="Aprašymo nuotrauka">
                 <div>
                     <h2 style="font-family: 'Inter';">SIŪLOMOS PAREIGOS</h2>
                     <p class="light20Text">Ieškome tokių pareigų, kaip: gamybos linijos operatoriaus, gaminių formuotojų rankomis, kepimo procesą prižiūrinčių darbuotojų bei formuotojų ir gaminių pakavimo procesu besirūpinančių darbuotojų. Dėl kitų pareigų taip pat galite kreiptis, tačiau negalime pažadėti, jog laisva vieta bus.</p>
@@ -49,7 +49,7 @@
                     <h2 style="font-family: 'Inter';">SIŪLOMOS DARBO SĄLYGOS</h2>
                     <p class="light20Text">Mūsų siūlomos darbo sąlygos yra: 8 valandų trukmės darbo diena 5 dienas per savaitę (norint, galima susitarti ir dėl 0.5 etato), uždarbis yra maždaug 1200-1500 € į rankas, darbas patalpoje, tačiau gražiu oru ir tinkamu metų laiku, gali tekti dirbti ir lauke.</p>
                 </div>
-                <img class="aprasymoimg" src="https://i.ibb.co/93bvmk4/Ultimate-Boston-City-Guide-Top-16-Things-to-See-Do-1.png">
+                <img class="aprasymoimg" src="images/bakery_aboutus.png">
             </div>
         </div>
 
@@ -57,11 +57,11 @@
             <p class="light30Header">DĖL DETALESNĖS INFORMACIJOS KREIPKITĖS</p>
             <div class="career-images">
                 <div class="">
-                    <img src = "https://lh3.googleusercontent.com/GfP79BBYcuCPcuuTrjKCmdVdGG8ui3w9KQUAZDC6GZIk0VAY__OarrcExne8vyEUOR0=w2400">
+                    <img src = "images/phone.png">
                     <p class="light20Text">+37065658565</p>
                 </div>
                 <div class="">
-                    <img src = "https://lh4.googleusercontent.com/ucYCcFzA5EdWYpCYng8KyOMSI_8vf_gO7MDwkoQIHWDY_4ZXDCPR0qH3WtXq61BAOk0=w2400">
+                    <img src = "images/mail.png">
                     <p class="light20Text">kodokepykla@gmail.com</p>
                 </div>
             </div>

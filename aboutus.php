@@ -29,7 +29,7 @@
         <?php include 'repeatingElements/header.php'; ?>
 
         <div class="meniuIntro">
-            <img class="aboutUsImage" src="https://i.ibb.co/93bvmk4/Ultimate-Boston-City-Guide-Top-16-Things-to-See-Do-1.png" alt="Kruasanai">
+            <img class="aboutUsImage" src="images/bakery_aboutus.png" alt="Kepykla">
             <div class="dark30Text">
                 <h1 class="aboutUsKK">KODO KEPYKLA</h1>
                 <p class="aboutUsDescription">Esame Kaune įsikūrusi prancūziškų kepinių įmonė, veikianti nuo 2023 m.</p>
@@ -46,21 +46,21 @@
                  <div class="container  dark30Text">
                   
                     <div class="changingImages fade">   
-                        <img class="changingImage" src="https://i.ibb.co/02Y3p4W/kouign-amann1.png" alt="ChangingIm">
+                        <img class="changingImage" src="images/Chouquette.png" alt="ChangingIm">
                         <div class="changingImText">
                             <p>Kepdami gaminius laikomes prancūziškų tradicijų</p>
                         </div>  
                     </div>   
         
                     <div class="changingImages fade">   
-                        <img class="changingImage" src="https://i.ibb.co/cYqxSZd/pain-au-chocolate-1.png" alt="ChangingIm2">
+                        <img class="changingImage" src="images/Religieuse.png" alt="ChangingIm2">
                         <div class="changingImText">
                             <p>Naudojame tik pačios aukščiosios kokybės ingridientus</p>
                         </div>  
                     </div>  
 
                     <div class="changingImages fade">   
-                        <img class="changingImage" src="https://i.ibb.co/FX4FMdB/pain-au-chocolate-1-1.png" alt="ChangingIm3">
+                        <img class="changingImage" src="images/PainAuChocolate.png" alt="ChangingIm3">
                         <div class="changingImText">
                             <p>Kepame kasdien, todėl mūsų gaminiai visada švieži</p>
                         </div>  
