@@ -1588,8 +1588,8 @@ form {
         margin-bottom: 20px;
     }
 
-    .meniuIntro{
-        margin-top: 120px;
+    .meniuIntro > h1{
+        size: 20px;
     }
    
   }
