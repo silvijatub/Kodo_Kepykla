@@ -1,6 +1,6 @@
 # Internetinė svetainė "Kodo kepykla"
 
-![localhost_Kodo_Kepykla_homepage php (1)](https://github.com/silvijatub/Kodo_Kepykla/assets/91486697/484d5e42-294d-4191-aea1-9d108dc41a6c)
+![image](https://github.com/silvijatub/Kodo_Kepykla/assets/91486697/930a987a-4850-4934-a933-b33366211f82)
 
 ## Įvadas
 
