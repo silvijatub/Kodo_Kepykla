@@ -80,6 +80,8 @@ Taip pat nėra paminėta, tačiau į paieškos lauką įvedus kažkokį žodį, 
 
 ## Testavimas ir jo rezultatai
 
+Nr. | Testavimo atvejis | Tikėtinas rezultatas | Realus rezultatas 
+--- | --- | --- | --- |
 
 ## Naudotojo dokumentacija
 
