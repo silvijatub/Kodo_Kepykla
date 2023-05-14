@@ -22,7 +22,8 @@ Komandos projekto idėja – internetinė svetainė, kuri skirta naujai įsikūr
 1. Kiekvienas sistemoje esantis mygtukas kažkur veda.
 2. Yra pateikiamos nuorodos į socialinius tinklus ir, paspaudus ant jų, ten ir nuveda.
 
-![image](https://github.com/silvijatub/Kodo_Kepykla/assets/91486697/4ef34f5d-9ced-4ece-9b76-c5faa44c983c)
+![image](https://github.com/silvijatub/Kodo_Kepykla/assets/126257217/7c885541-48be-4782-88c8-6f30aa745b9f)
+
  
 3. Galima matyti žemėlapį, kuris parodo vietą, kurioje įsikūrusi kepykla.
 
