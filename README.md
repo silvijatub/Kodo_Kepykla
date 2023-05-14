@@ -63,6 +63,20 @@ Komandos projekto idėja – internetinė svetainė, kuri skirta naujai įsikūr
 
 ## Architektūra
 
+Abstrakti tinklalapio architektūra atrodo maždaug taip:
+
+![Screenshot_1](https://github.com/silvijatub/Kodo_Kepykla/assets/91486697/b40e4096-d8e3-4908-a7f7-a5f06fb24a0d)
+
+Iš šio paveikslėlio galime matyti, kad iš namų puslapio galima pereiti į "Apie mus", "Meniu", "Karjera", "Privatumo politika", "Kontaktai" ir pirkinių krepšelio puslapius. Žinoma, iš kiekvieno to puslapio galima pereiti į bet kurį kitą. Detaliau apie kiekvieną iš tų puslapių:
+1. "Apie mus" puslapyje galima pamatyti, kas tai per įmonė.
+2. "Meniu" puslapyje galima pamatyti, kokie produktai yra parduodami ir, žinoma, galima pereiti į kiekvieno produkto puslapį.
+3. "Karjera" puslapyje galima pamatyti informaciją apie tai, kokių žmonių ieškoma į kolektyvą, kas yra siūloma darbininkams bei kokios yra darbo sąlygos.
+4. "Privatumo politika" puslapyje yra pateikta privatumo politikos informacija.
+5. "Kontaktai" puslapyje yra pateikiama kontaktinė informacija bei galimybė išsiųsti laišką puslapį administruojantiems asmenims.
+6. Pirkinių krepšelio puslapyje galima pamatyti, kokie produktai yra įdėti į pirkinių krepšelį.
+
+Taip pat nėra paminėta, tačiau į paieškos lauką įvedus kažkokį žodį, yra perkeliama į paieškos rezultatų puslapį. Ten galima pamatyti visus produktus, kurie atitinka paieškos raktinį žodį.
+
 
 ## Testavimas ir jo rezultatai
 
