@@ -85,8 +85,20 @@ Taip pat nėra paminėta, tačiau į paieškos lauką įvedus kažkokį žodį, 
 
 
 ## Priedai
-Čia pateikiamos visos reikalingos nuorodos, susijusios su šiuo darbu:
+Čia pateikiama, kas buvo reikalinga šiam darbui:
+
+Jira:
+
 https://kodkep.atlassian.net/jira/software/projects/KOD/boards/1
+
+Slack:
+
 https://app.slack.com/client/T04RCJ92JAX/C04RRB7DX17
+
+Figma:
+
 https://www.figma.com/file/T7jxFurvjHForgSoD2ncTe/Kodo_Kepykla?type=design&node-id=0-1&t=AE72WJZ7LLOrBbx5-0
+
+Miro:
+
 https://miro.com/app/board/uXjVMZCKklU=/?fbclid=IwAR0s6C1ybXhM7L5fyjt-y2VxNxlpK6nbKlD-WmjgbRaI3vWNlO0yW94_aNQ
