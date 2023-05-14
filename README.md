@@ -100,6 +100,38 @@ Vėliau, kiekvienas komandos narys (atitinkamai kaip ir prieš tai) testavo ne s
 
 ## Naudotojo dokumentacija
 
+ĮVADAS
+
+Kas yra ,,Kodo Kepykla“?
+Tai prancūziškų kepinių kepyklos ,,Kodo Kepykla“ svetainė, skirta pateikti informaciją apie kepyklą, jos parduodamas prekes bei suteikti galimybę įsigyti parduodamus produktus internetu.
+
+Kam naudojama svetainė?
+Svetainėje ,,Kodo Kepykla“ galima:
+•	Ieškoti kepyklos siūlomų produktų
+•	Peržiūrėti kepyklos siūlomus produktus 
+•	Pirkti kepyklos siūlomus produktus
+•	Įvertinti įsigytą produktą
+•	Peržiūrėti informaciją apie ,,Kodo Kepyklą“
+•	Susisiekti su ,,Kodo Kepykla“
+
+NAUDOJIMAS
+
+Prekės paieška
+•	Visus kepyklos siūlomus produktus galima rasti puslapyje ,,Meniu“, į kurį galima patekti spaudžiant viršutinėje juostoje esančią nuorodą arba pagrindiniame svetainės puslapyje spaudžiant ,,Žiūrėti visus produktus“.
+•	Prekės galima ieškoti pagal jos pavadinimą arba aprašymą, viršutinėje svetainės juostoje esančiame paieškos laukelyje įvedus tekstą.
+•	Apie kiekvieną produktą galima matyti tokią informaciją: pavadinimas, įvertinimas, kaina, aprašymas, nuotrauka.
+Pirkimas
+Prekės įdėjimas į krepšelį
+•	Prekę įdėti į krepšelį galima spaudžiant mygtuką ,,Į krepšelį“, esantį prie kiekvienos prekės. Jei to produkto tuo metu nėra, mygtus nebus aktyvus.
+•	Esant ,,Meniu“ puslapyje, spaudžiant mygtuką ,,Į krepšelį“, į krepšelį bus įdėta viena prekė. Esant produkto puslapyje, reikia pasirinkti norimą produktų kiekį.
+Krepšelis
+•	Krepšelyje galite keisti prekių kiekius, pašalinti prekes iš krepšelio.
+•	Norint toliau tęsti apsipirkimą, spausti ,,Užsakyti“.
+Susisiekimas su ,,Kodo Kepykla“
+•	Susisiekti su kepykla galima puslapyje ,,Kontaktai“, kuriame galite tiesiogiai rašyti žinutę ,,Kodo Kepyklai“ elektroniniu paštu.
+•	Puslapyje ,,Kontaktai“ rasite ir kitus būdus susisiekti su kepykla.
+•	Kontaktai taip pat pateikiami apatinėje svetainės juostoje.
+
 
 ## Priedai
 Čia pateikiama, kas buvo reikalinga šiam darbui:
