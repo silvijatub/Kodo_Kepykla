@@ -24,9 +24,8 @@
                 <button onclick="location.href='contacts.php'" class="headerButton <?php if (basename($_SERVER['PHP_SELF']) == 'contacts.php') echo 'active'; ?>">KONTAKTAI</button>
             </li>
             <li class = nav-item>
-                <div class="shoppingCartGrid" onclick="location.href='shopping_cart.php'" >
-                    <button class="headerBasket headerButton layer2"><img src="images/shopping_cart.png" alt="Krepšelis" style="height: 24px"></button>
-                    <span class="dot layer1">0</span>
+                <div>
+                    <button class="headerBasket headerButton"><img src="images/shopping_cart.png" alt="Krepšelis" style="height: 24px"></button>
                 </div>
             </li>
         </ul>

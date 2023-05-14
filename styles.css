@@ -1589,25 +1589,3 @@ form {
     }
    
   }
-
-  .shoppingCartGrid{
-    display: grid;
-    height: 94px;
-}
-
-  .dot {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 35px;
-    margin-top: 50px;
-    height: 24px;
-    width: 24px;
-    background-color: #F79221;
-    border-radius: 50%;
-  }
-
-  .layer1, .layer2{
-    grid-column: 1;
-    grid-row: 1;
-  }
