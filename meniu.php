@@ -58,9 +58,9 @@ $all_products = $connection->query($sql);
                     if ($amount == '0'){ $output = "Neturime";}
             ?>
             <div class="meniuItemGrid">
-                <button class="secondaryButton ziuretiButton" <?php if ($amount == '0'){ ?> disabled <?php   } ?>>
+                <button class="secondaryButton ziuretiButton" <?php if ($amount == '0'){ ?> disabled <?php   } ?> onclick="createShoppingCartTable()">
                     <div>
-                        <img class="icon" src="images/basketIcon.png" alt="Į krepšelį">
+                        <img class="icon" src="images/basketIcon.png" alt="Į krepšelį" >
                         <p><?php echo $output ?></p>
                     </div>
                 </button>
