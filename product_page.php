@@ -1,7 +1,7 @@
 <?php
 require_once 'connection.php';
-
 ?>
+>
 
 <!DOCTYPE html>
 <html lang="lt">
@@ -137,7 +137,8 @@ require_once 'connection.php';
                 <p class="dark16Text">Kviečiame užsisakyti šią prekę dabar!</p>
             </div>
         </div>
-
+        
+        <script src="cart.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
         <script type="text/javascript" src="functions.js"></script>
         <script type="text/javascript" src="items.js"></script>

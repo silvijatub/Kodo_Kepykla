@@ -44,8 +44,8 @@ $all_products = $connection->query($sql);
                         <p class="dark20Text"><?php echo $row["Pavadinimas"]; ?></p>
                         <p class="lightBold20Text"><?php echo $row["Kaina"]; ?> € / vnt.</p>
                     </div>
-                    <p style="width:300px; margin-left: 270px;" class="lightBold20Text"><?php echo $row["Kiekis"]; ?> vnt. </p>
-                    <p style="width:100px; margin-left: 220px;" class="lightBold20Text"><?php echo $row["Kaina"]*$row["Kiekis"]; ?> € </p>
+                    <p style="width:250px; margin-left: 200px;" class="lightBold20Text"><?php echo $row["Kiekis"]; ?> vnt. </p>
+                    <p style="width:100px; margin-left: 210px;" class="lightBold20Text"><?php echo $row["Kaina"]*$row["Kiekis"]; ?> € </p>
                     <img onclick="deleteRow(<?php echo $row['Pavadinimas']; ?>)" style="height:24px;  margin-left: auto; margin-right: 20px; " src="<?php echo 'images/trash.png'; ?>" alt="<?php echo $row["Pavadinimas"]; ?>"> 
                     <script>
                         function deleteRow(pavadinimas) {
