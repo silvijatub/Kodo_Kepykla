@@ -38,7 +38,7 @@ require_once 'connection.php';
                     if ($amount == '0'){ $output = "Neturime";}
             ?>
             <div class="meniuItemGrid">
-                <button class="secondaryButton ziuretiButton" <?php if ($amount == '0'){ ?> disabled <?php   } ?>>
+                <button class="secondaryButton ziuretiButton" disabled>
                     <div>
                         <img class="icon" src="images/basketIcon.png" alt="Į krepšelį">
                         <p><?php echo $output ?></p>

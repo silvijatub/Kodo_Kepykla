@@ -73,7 +73,7 @@ require_once 'connection.php';
                 <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
               </form>
 
-              <button class="secondaryButton ziuretiButton" <?php if ($amount == '0'){ ?> disabled <?php   } ?> style="margin-top: 50px">
+              <button class="secondaryButton ziuretiButton" disabled style="margin-top: 50px">
                     <div>
                         <img class="icon" src="images/basketIcon.png" alt="Į krepšelį">
                         <p><?php echo $output ?></p>
