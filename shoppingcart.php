@@ -23,7 +23,8 @@
                 <div class="viso">Viso</div>
             </div>
             <hr class="line"></hr>
-
+            <div class="prekes"></div>
+            <div class="suma">Mokėtina suma: </div>
             <button class="primaryButton">UŽSAKYTI</button>
         </div>
 

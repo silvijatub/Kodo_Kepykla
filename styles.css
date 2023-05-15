@@ -1642,7 +1642,7 @@ form {
 
   .line {
     color: #442419;
-    size: 10px;
+    size: 5;
     margin: 0px 25px;
   }
 
@@ -1653,6 +1653,7 @@ form {
     align-items: center;
     justify-content: center;
     color: #442419;
+    text-decoration: solid;
   }
 
   .prek {
@@ -1663,6 +1664,13 @@ form {
   .viso {
     display: flex;
     margin: 0% 25% 0% 30%;
+  }
+
+  .suma {
+    display: flex;
+    justify-content: right;
+    color: #442419;
+    text-decoration: solid;
   }
 
   .krepselis > .primaryButton {
