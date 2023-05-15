@@ -123,7 +123,15 @@ Svetainėje ,,Kodo Kepykla“ galima:
 **Prekės paieška**
 
 1.	Visus kepyklos siūlomus produktus galima rasti puslapyje ,,Meniu“, į kurį galima patekti spaudžiant viršutinėje juostoje esančią nuorodą arba pagrindiniame svetainės puslapyje spaudžiant ,,Žiūrėti visus produktus“.
+
+![image](https://github.com/silvijatub/Kodo_Kepykla/assets/91486697/65b59d0f-ddcc-40d9-a40e-7d1d670e51eb)
+
+![image](https://github.com/silvijatub/Kodo_Kepykla/assets/91486697/b444b341-237a-4720-9ef8-bc0045e15dc1)
+
 2.	Prekės galima ieškoti pagal jos pavadinimą arba aprašymą, viršutinėje svetainės juostoje esančiame paieškos laukelyje įvedus tekstą.
+
+![image](https://github.com/silvijatub/Kodo_Kepykla/assets/91486697/0e472f8d-9139-4dd8-81e7-6444a2ffd28f)
+
 3.	Apie kiekvieną produktą galima matyti tokią informaciją: pavadinimas, įvertinimas, kaina, aprašymas, nuotrauka.
 
 **Pirkimas**
@@ -132,6 +140,8 @@ Prekės įdėjimas į krepšelį
 
 1.	Prekę įdėti į krepšelį galima spaudžiant mygtuką ,,Į krepšelį“, esantį prie kiekvienos prekės. Jei to produkto tuo metu nėra, mygtus nebus aktyvus.
 2.	Esant ,,Meniu“ puslapyje, spaudžiant mygtuką ,,Į krepšelį“, į krepšelį bus įdėta viena prekė. Esant produkto puslapyje, reikia pasirinkti norimą produktų kiekį.
+
+![image](https://github.com/silvijatub/Kodo_Kepykla/assets/91486697/5d7b6b4a-1a6d-4461-8283-898fdf94eca7)
 
 Krepšelis
 
@@ -143,7 +153,6 @@ Krepšelis
 1.	Susisiekti su kepykla galima puslapyje ,,Kontaktai“, kuriame galite tiesiogiai rašyti žinutę ,,Kodo Kepyklai“ elektroniniu paštu.
 2.	Puslapyje ,,Kontaktai“ rasite ir kitus būdus susisiekti su kepykla.
 3.	Kontaktai taip pat pateikiami apatinėje svetainės juostoje.
-
 
 ## Priedai
 Čia pateikiama, kas buvo reikalinga šiam darbui:
