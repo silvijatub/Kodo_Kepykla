@@ -1633,15 +1633,23 @@ form {
   }
 
   .krepselis > h1 {
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
     color: #442419;
   }
 
   .line {
     color: #442419;
+    height: 5px;
+    margin: 0px 25px;
   }
 
   .krepselioAntrastes {
     display: flex;
     flex-direction: row;
+    margin: 10px 50px;
+    align-items: center;
+    justify-content: center;
   }
 
