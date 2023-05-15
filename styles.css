@@ -1641,7 +1641,7 @@ form {
 
   .line {
     color: #442419;
-    height: 5px;
+    size: 5px;
     margin: 0px 25px;
   }
 
@@ -1651,5 +1651,10 @@ form {
     margin: 10px 50px;
     align-items: center;
     justify-content: center;
+  }
+
+  .krepselis > .primaryButton {
+    justify-content: right;
+    margin: 20px 80px 80px;
   }
 
