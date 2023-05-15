@@ -15,7 +15,16 @@
         <?php include 'repeatingElements/header.php'; ?>
 
         <div class="krepselis">
-            
+            <h1>PREKIŲ KREPŠELIS</h1>
+            <hr class="line"></hr>
+            <div class="krepselioAntrastes">
+                <div class="prek">Prekė</div>
+                <div class="kiek">Kiekis</div>
+                <div class="viso">Viso</div>
+            </div>
+            <hr class="line"></hr>
+
+            <button class="primaryButton">UŽSAKYTI</button>
         </div>
 
         <?php include 'repeatingElements/footer.php'; ?>

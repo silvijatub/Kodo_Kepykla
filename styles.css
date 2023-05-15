@@ -1627,4 +1627,21 @@ form {
      }
   }
 
+  /*-----------Shopping Cart---------------*/
+  .krepselis {
+    background-color: #f9efe4;
+  }
+
+  .krepselis > h1 {
+    color: #442419;
+  }
+
+  .line {
+    color: #442419;
+  }
+
+  .krepselioAntrastes {
+    display: flex;
+    flex-direction: row;
+  }
 
