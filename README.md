@@ -94,8 +94,6 @@ Nr. | Testavimo atvejis | Tikėtinas rezultatas | Realus rezultatas
 9 | Produkto kiekio pasirinkimo mygtukai (produktų skaičių bandoma sumažinti iki neigiamo) | Neleidžiama rinktis mažesnio nei 0 produkto kiekio | Atitinka tikėtiną
 10 | Produkto kiekio pasirinkimo mygtukai (tikrinamas + ir - funkcionalumas) | Paspaudus mygtukus prekės kiekis padidėja/sumažėja vienetu | Atitinka tikėtiną
 11 | Laiško išsiuntimas užpildant formą | Užpildžius formą (įvedus vardą, pavardę, elektroninį paštą ir žinutę), laiškas išsiunčiamas į kodokepykla@gmail.com | Atitinka tikėtiną
-12 | Pirkinių krepšelio veikimas | Paspaudus "Įdėti į krepšelį", įdedamas atitinkamas kiekis produktų į pirkinių krepšelį | Neatitinka tikėtino
-13 | Prekės šalinimo mygtukas | Paspaudus turėtų pašalinti elementą iš duomenų bazės | Neatitinka tikėtino
 
 Taip pat buvo atlikti testavimai kiekvienam iš sukurtų puslapių. 
 Pirmiausia, kiekvienas komandos narys tikrino ne savo rašytą kodą ir, jei reikėjo, atliko tam tikrus pakeitimus (tai atitinka statinį programinės įrangos testavimo būdą). Neda testavo Silvijos kodą, Silvija testavo Jono kodą, Jonas testavo Guodos kodą, o Guoda testavi Nedos kodą. Buvo surasta keletas klaidų (daugiausiai dizaine) ir šios buvo pašalintos.
