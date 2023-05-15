@@ -1,3 +1,15 @@
+<?php
+require_once 'connection.php';
+
+$sql="SELECT COUNT(pavadinimas) FROM krepselis";
+$result = $connection->query($sql);
+if ($result) {
+    $row = $result->fetch_row();
+    $count = $row[0];
+} else {
+    $count = 0;
+}
+?>
 <header>
     <button onclick="location.href='homepage.php'" class="logoButton"><img class="logo" src="images/Logo.png" alt="Logo"></button>
     <div class="search-container">
@@ -24,8 +36,9 @@
                 <button onclick="location.href='contacts.php'" class="headerButton <?php if (basename($_SERVER['PHP_SELF']) == 'contacts.php') echo 'active'; ?>">KONTAKTAI</button>
             </li>
             <li class = nav-item>
-                <div>
-                    <button onclick="location.href='shoppingcart.php'" class="headerBasket headerButton"><img src="images/shopping_cart.png" alt="Krepšelis" style="height: 24px"></button>
+                <div class="shoppingCartGrid" onclick="location.href='shoppingcart.php'" >
+                    <button class="headerBasket headerButton layer2"><img src="images/shopping_cart.png" alt="Krepšelis" style="height: 24px"></button>
+                    <span class="dot layer1"><?php echo $count ?></span>
                 </div>
             </li>
         </ul>

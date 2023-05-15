@@ -1,3 +1,10 @@
+<?php
+require_once 'connection.php';
+
+$sql="SELECT * FROM krepselis";
+$all_products = $connection->query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="lt">
     <title>Kodo kepykla</title>
@@ -22,11 +29,50 @@
                 <div class="kiek">Kiekis</div>
                 <div class="viso">Viso</div>
             </div>
-            <hr class="line"></hr>
+            <hr style="margin-bottom:20px;" class="line"></hr>
             <div class="prekes"></div>
-            <div class="suma">Mokėtina suma: </div>
-            <button class="primaryButton">UŽSAKYTI</button>
         </div>
+
+        <div>
+            <?php
+                while($row = mysqli_fetch_assoc($all_products)){
+            ?>
+            <div >
+                <div class="cart_item">
+                    <img style="height:100px; margin: 10px 20px;" src="images/<?php echo $row["Pavadinimas"]; ?>.png" alt="<?php echo $row["Pavadinimas"]; ?>">   
+                    <div style="width:300px;">
+                        <p class="dark20Text"><?php echo $row["Pavadinimas"]; ?></p>
+                        <p class="lightBold20Text"><?php echo $row["Kaina"]; ?> € / vnt.</p>
+                    </div>
+                    <p style="width:300px; margin-left: 270px;" class="lightBold20Text"><?php echo $row["Kiekis"]; ?> vnt. </p>
+                    <p style="width:100px; margin-left: 220px;" class="lightBold20Text"><?php echo $row["Kaina"]*$row["Kiekis"]; ?> € </p>
+                    <img onclick="deleteRow(<?php echo $row['Pavadinimas']; ?>)" style="height:24px;  margin-left: auto; margin-right: 20px; " src="<?php echo 'images/trash.png'; ?>" alt="<?php echo $row["Pavadinimas"]; ?>"> 
+                    <script>
+                        function deleteRow(pavadinimas) {
+                                    console.log(pavadinimas);
+                            const xhr = new XMLHttpRequest();
+                            xhr.open('POST', 'delete_row.php');
+                            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                            xhr.onload = function() {
+                                if (xhr.status === 200) {
+                                    console.log('Row deleted successfully');
+                                    location.reload();
+                                } else {
+                                    console.error('Error deleting row');
+                                }
+                            };
+                            xhr.send('pavadinimas=' + encodeURIComponent(pavadinimas));
+                        }
+                    </script>
+                </div>
+            </div>
+            <?php
+                }
+            ?>
+
+        </div>
+        
+        <button style="margin-left: 20px; margin-bottom: 40px;" class="primaryButton">UŽSAKYTI</button>
 
         <?php include 'repeatingElements/footer.php'; ?>
 

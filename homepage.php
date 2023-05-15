@@ -63,7 +63,7 @@ $all_products = $connection->query($sql);
             <div class="oranzinisAprasymas">
                 <div class="oranzDiv">
                     <h2 style="margin-top:20px" style="font-family: 'Inter'">KĄ SIŪLOME?</h2>
-                    <p class="light20Text">Kiekvienam iš savo klientų siūlome nepamirštamą patirtį neapsakomoje prancūziškų skonių jūroje.</p>
+                    <p class="light20Text">Kiekvienam iš savo klientų siūlome nepamirštamą patirtį neapsakomoje prancūziškų skonių jūroje, paragaukite delikatesų iš kiekvieno unikalaus Prancūzijos regiono.</p>
                 </div>
                 <img class="aprasymoimg" src="images/KouignAmann.png" alt="Kouign Amann">
             </div>
