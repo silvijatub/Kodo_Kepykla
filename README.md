@@ -19,7 +19,7 @@ Scrum komandose yra trys vaidmenys: Scrum meistras, produkto savininkas ir kūri
 Komandos projekto idėja – internetinė svetainė, kuri skirta naujai įsikūrusios kepyklėlės klientų pritraukimui ir kurioje būtų galima susipažinti su kepyklėlės tiekiama prancūziška produkcija, tokiais gaminiais kaip: prancūziški pyragaičiai - kanelės, prancūziškas batonas, kruasanai ar panašiai. Svetainėje turi būti pagrindinės panašaus tipo tinklalapių savybės: ką kepyklėlė gamina (visa produkcija, asortimentas), kokios yra tam tikrų gaminių kainos, šiek tiek informacijos apie pačią kepyklėlę (kaip įsikūrė ir kodėl), turi būti pateikta kontaktinė informacija, kad klientai galėtų susisiekti ir pasikonsultuoti jiems aktualiais klausimais, galimybė parašyti laišką kepyklai bei matomi ankstesni įvertinimai. Abstrakti dizaino idėja - sveitainė, kuri yra pakankamai paprasta, minimalistinė, tam, kad visa informacija būtų pateikiama aiškiai, suprantamai, bet tuo pat metu ir būtų funkcionalu ir lengva naudotis kiekvienam klientui.
 
 **Funkciniai reikalavimai**:
-1. Kiekvienas sistemoje esantis mygtukas kažkur veda.
+1. Kiekvienas sistemoje esantis mygtukas atlieka savo funkciją.
 2. Yra pateikiamos nuorodos į socialinius tinklus ir, paspaudus ant jų, ten ir nuveda.
 
 ![image](https://github.com/silvijatub/Kodo_Kepykla/assets/126257217/7c885541-48be-4782-88c8-6f30aa745b9f)
@@ -98,7 +98,7 @@ Nr. | Testavimo atvejis | Tikėtinas rezultatas | Realus rezultatas
 13 | Prekės šalinimo mygtukas | Paspaudus turėtų pašalinti elementą iš duomenų bazės | Neatitinka tikėtino
 
 Taip pat buvo atlikti testavimai kiekvienam iš sukurtų puslapių. 
-Pirmiausia, kiekvienas komandos narys tikrino ne savo rašytą kodą ir, jei reikėjo, atliko tam tikrus pakeitimus (tai atitinka statinį programinės įrangos testavimo būdą). Neda testavo Silvijos kodą, Silvija testavo Jono kodą, Jonas testavo Guodos kodą, o Guoda testavi Nedos kodą. Buvo surasta keletas klaidų (daugiausiai dizaine) ir šios buvo daugiau mažiau pašalintos.
+Pirmiausia, kiekvienas komandos narys tikrino ne savo rašytą kodą ir, jei reikėjo, atliko tam tikrus pakeitimus (tai atitinka statinį programinės įrangos testavimo būdą). Neda testavo Silvijos kodą, Silvija testavo Jono kodą, Jonas testavo Guodos kodą, o Guoda testavi Nedos kodą. Buvo surasta keletas klaidų (daugiausiai dizaine) ir šios buvo pašalintos.
 Vėliau, kiekvienas komandos narys (atitinkamai kaip ir prieš tai) testavo ne savo sukurtus puslapius juos paleidus (tai atitinka dinaminį programinės įrangos testavimo būdą). Buvo atliekamas testavimas taikant "baltos dėžės" metodiką, kai buvo žinoma, kas turi įvykti atliekant tam tikrus veiksmus. O vėliau, buvo taikoma "juodos dėžės" metodika, kai nėra žinoma, kas turi įvykti (tai atitiktų naudotojo patirtį) ir buvo spaudinėjami mygtukai per daug nesigilinant į tai, kas vyksta. Nebuvo kilę jokių nesklandumų. Galiausiai buvo duota programinė įranga testuoti su projektu nesusijusiam asmeniui (kitos studijų programos studentui), tačiau jokia problema ir tada neaiškilo.
 
 ## Naudotojo dokumentacija
